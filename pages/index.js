@@ -7,6 +7,7 @@ import { MdWeb } from "react-icons/md";
 import { AiOutlineMobile } from "react-icons/ai";
 //UI components
 import Navbar from "../components/Navbar";
+import Process from "../components/Process";
 
 const Home = () => {
   return (
@@ -110,9 +111,27 @@ const ServicesBlock = () => (
 );
 
 const ProcessBlock = () => (
-  <div>
-    <h1>¿Cuál es nuestro proceso?</h1>
-  </div>
+  <>
+    <div className="flex justify-center p-16">
+      <h1 className="font-sans font-black text-3xl">
+        ¿Cuál es nuestro proceso?
+      </h1>
+    </div>
+    <div className="flex justify-around px-14 py-16">
+      <Process step={1}>
+        Diseñamos la interfaz y la experiencia de uso para que puedas sugerir
+        cambios y correciones
+      </Process>
+      <Process step={2}>
+        LLevamos el diseño y requerimientos a la realidad usando nuestro stack
+        de tecnologías
+      </Process>
+      <Process step={3}>
+        Realizamos diferentes pruebas al software, después de eso tu idea estará
+        disponible a todos tus clientes
+      </Process>
+    </div>
+  </>
 );
 
 const DownArrow = () => (
