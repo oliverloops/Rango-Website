@@ -20,7 +20,7 @@ const Home = () => {
       <DownArrow />
       <ProcessBlock />
       <DownArrow />
-      <Form />
+      <ContactBlock />
     </>
   );
 };
@@ -139,6 +139,21 @@ const ProcessBlock = () => (
       </Process>
     </div>
   </>
+);
+
+const ContactBlock = () => (
+  <div className="grid grid-cols-auto grid-rows-auto gap-2 px-4 py-8">
+    <div className="col-start-1 row-start-1">
+      <Form />
+    </div>
+    <div className="col-start-2 row-start-1">
+      <h1 className="font-sans font-black text-3xl">Contactános</h1>
+      <p className="font-sans  text-lg">
+        Envíanos un correo con tus datos y cuentanos un poco más sobre tu idea,
+        nos encantaría trabajar contigo.
+      </p>
+    </div>
+  </div>
 );
 
 const DownArrow = () => (
