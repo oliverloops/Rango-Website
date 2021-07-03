@@ -44,6 +44,7 @@ const Home = () => {
       <ServicesBlock />
       <DownArrow />
       <ProcessBlock />
+      <DownArrow />
     </>
   );
 };
