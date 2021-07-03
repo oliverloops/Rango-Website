@@ -8,46 +8,52 @@ import { AiOutlineMobile } from "react-icons/ai";
 //UI components
 import Navbar from "../components/Navbar";
 import Process from "../components/Process";
+import Form from "../components/Form";
 
 const Home = () => {
   return (
     <>
       <Navbar />
-      <div className="grid grid-cols-2 grid-auto-rows justify-items-start py-16 gap-2">
-        <div className="col-start-1 row-start-1 p-8 pl-12">
-          <h1 className="font-sans font-black text-5xl">
-            Construímos tus ambiciosos productos digitales.
-          </h1>
-          <p className="pt-6 text-lg">
-            Rango es una agencia de software. En Rango nosotros construímos el
-            futuro, resolvemos problemas y creamos las mejores experiencias en
-            web y móvil.
-          </p>
-        </div>
-        <div className="col-start-2 row-start-1 place-self-center">
-          <Image src="/rango_logo.png" width="320" height="320" />
-        </div>
-        <div className="col-start-1 row-start-2 pl-12">
-          <Link href="#">
-            <a>
-              <button className="bg-yellow-300 rounded-full py-4 px-7">
-                Contratános
-              </button>
-            </a>
-          </Link>
-          <Link href="#">
-            <a className="underline px-5">Nuestro portafolio</a>
-          </Link>
-        </div>
-      </div>
+      <MainBlock />
       <DownArrow />
       <ServicesBlock />
       <DownArrow />
       <ProcessBlock />
       <DownArrow />
+      <Form />
     </>
   );
 };
+
+const MainBlock = () => (
+  <div className="grid grid-cols-2 grid-auto-rows justify-items-start py-16 gap-2">
+    <div className="col-start-1 row-start-1 p-8 pl-12">
+      <h1 className="font-sans font-black text-5xl">
+        Construímos tus ambiciosos productos digitales.
+      </h1>
+      <p className="pt-6 text-lg">
+        Rango es una agencia de software. En Rango nosotros construímos el
+        futuro, resolvemos problemas y creamos las mejores experiencias en web y
+        móvil.
+      </p>
+    </div>
+    <div className="col-start-2 row-start-1 place-self-center">
+      <Image src="/rango_logo.png" width="320" height="320" />
+    </div>
+    <div className="col-start-1 row-start-2 pl-12">
+      <Link href="#">
+        <a>
+          <button className="bg-yellow-300 rounded-full py-4 px-7">
+            Contratános
+          </button>
+        </a>
+      </Link>
+      <Link href="#">
+        <a className="underline px-5">Nuestro portafolio</a>
+      </Link>
+    </div>
+  </div>
+);
 
 const ServicesBlock = () => (
   <div className="grid grid-cols-2 grid-auto-rows justify-items-start py-12 gap-2">
@@ -121,11 +127,11 @@ const ProcessBlock = () => (
     <div className="flex justify-around px-14 py-16">
       <Process step={1}>
         Diseñamos la interfaz y la experiencia de uso para que puedas sugerir
-        cambios y correciones
+        cambios, correciones y retroalimentación
       </Process>
       <Process step={2}>
-        LLevamos el diseño y requerimientos a la realidad usando nuestro stack
-        de tecnologías
+        LLevamos el diseño y requerimientos de tu proyecto a la realidad usando
+        nuestro stack de tecnologías
       </Process>
       <Process step={3}>
         Realizamos diferentes pruebas al software, después de eso tu idea estará
