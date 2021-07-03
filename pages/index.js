@@ -42,6 +42,7 @@ const Home = () => {
       <DownArrow />
       <ServicesBlock />
       <DownArrow />
+      <ProcessBlock />
     </>
   );
 };
@@ -50,7 +51,10 @@ const ServicesBlock = () => (
   <div className="grid grid-cols-2 grid-auto-rows justify-items-start py-12 gap-2">
     <div className="col-start-1 row-start-1 p-8 pl-12">
       <h1 className="font-sans font-black text-5xl">
-        Hacemos tus ideas realidad con alguno de nuestros servicios.
+        <span className="marker-text-1">Hacemos</span> tus{" "}
+        <span className="marker-text-2">ideas</span>{" "}
+        <span className="marker-text-3">realidad </span> con alguno de nuestros
+        servicios.
       </h1>
       <p className="pt-6 text-lg">
         Ya sea que necesites un sitio web que se adapte a tus necesidades,
@@ -60,40 +64,54 @@ const ServicesBlock = () => (
     </div>
     <div className="col-start-2 row-start-1 place-self-center">
       <div className="grid grid-auto-cols grid-auto-rows justify-items-center gap-6">
-        <div className="flex flex-col col-start-1 row-start-1 shadow-md rounded-2xl p-6">
-          <div className="bg-green-100 text-green-500 rounded-full w-20 h-20">
-            <BiCodeAlt size={32} />
+        <div className="col-start-1 row-start-1 shadow-md rounded-2xl p-6">
+          <div className="flex flex-col justify-center bg-green-100 text-green-500 rounded-full w-20 h-20">
+            <div className="flex justify-center self-center">
+              <BiCodeAlt size={32} />
+            </div>
           </div>
-          <p className="text-sm text-center">
+          <p className="text-sm text-center pt-2">
             Desarrollo <br /> Frontend
           </p>
         </div>
-        <div className="flex flex-col col-start-1 row-start-2  shadow-md rounded-2xl p-6">
-          <div className="bg-purple-100 text-purple-500 rounded-full w-20 h-20">
-            <GoServer size={32} />
+        <div className="col-start-2 row-start-1  shadow-md rounded-2xl p-6">
+          <div className="flex flex-col justify-center bg-purple-100 text-purple-500 rounded-full w-20 h-20">
+            <div className="flex justify-center self-center">
+              <GoServer size={32} />
+            </div>
           </div>
-          <p className="text-sm text-center">
+          <p className="text-sm text-center pt-2">
             Desarrollo <br /> Backend
           </p>
         </div>
-        <div className="flex flex-col col-start-2 row-start-1  shadow-md rounded-2xl p-6">
-          <div className="bg-red-100 text-red-600 rounded-full w-20 h-20">
-            <MdWeb size={32} />
+        <div className="col-start-1 row-start-2  shadow-md rounded-2xl p-6">
+          <div className="flex flex-col justify-center bg-red-100 text-red-600 rounded-full w-20 h-20">
+            <div className="flex justify-center self-center">
+              <MdWeb size={32} />
+            </div>
           </div>
-          <p className="text-sm text-center">
+          <p className="text-sm text-center pt-2">
             Diseño <br /> UI/UX
           </p>
         </div>
-        <div className="flex flex-col col-start-2 row-start-2  shadow-md rounded-2xl p-6">
-          <div className="bg-blue-100 text-blue-500 rounded-full w-20 h-20">
-            <AiOutlineMobile size={32} />
+        <div className="col-start-2 row-start-2  shadow-md rounded-2xl p-6">
+          <div className="flex flex-col justify-center bg-blue-100 text-blue-500 rounded-full w-20 h-20">
+            <div className="flex justify-center self-center">
+              <AiOutlineMobile size={32} />
+            </div>
           </div>
-          <p className="text-sm text-center">
+          <p className="text-sm text-center pt-2">
             Aplicaciones <br /> Móvil
           </p>
         </div>
       </div>
     </div>
+  </div>
+);
+
+const ProcessBlock = () => (
+  <div>
+    <h1>¿Cuál es nuestro proceso?</h1>
   </div>
 );
 
