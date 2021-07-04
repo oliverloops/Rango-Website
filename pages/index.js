@@ -119,12 +119,12 @@ const ServicesBlock = () => (
 
 const ProcessBlock = () => (
   <>
-    <div className="flex justify-center p-16">
-      <h1 className="font-sans font-black text-3xl">
+    <div className="flex justify-center p-8 md:p-16">
+      <h1 className="font-sans font-black text-center text-2xl md:text-3xl">
         ¿Cuál es nuestro proceso?
       </h1>
     </div>
-    <div className="flex justify-around px-14 py-16">
+    <div className="flex flex-col md:flex-row justify-around px-3 md:px-14 py-2 md:py-16">
       <Process step={1}>
         Diseñamos la interfaz y la experiencia de uso para que puedas sugerir
         cambios, correciones y retroalimentación
@@ -142,18 +142,18 @@ const ProcessBlock = () => (
 );
 
 const ContactBlock = () => (
-  <div className="grid grid-cols-2 grid-rows-auto gap-2 px-6 py-14">
-    <div className="col-start-1 row-start-1 row-end-3 px-8">
+  <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-auto gap-2 px-6 py-14">
+    <div className="col-start-1 row-start-2 md:row-start-1 md:row-end-3 px-0 md:px-8 py-4 md:py-0">
       <Form />
     </div>
-    <div className="col-start-2 row-start-1 w-3/4">
-      <h1 className="font-sans font-black text-3xl">Contactános</h1>
-      <p className="font-sans text-lg py-4">
+    <div className="col-start-1 md:col-start-2 row-start-1 p-2 md:p-0 w-full md:w-3/4">
+      <h1 className="font-sans font-black text-2xl md:text-3xl">Contactános</h1>
+      <p className="font-sans text-md md:text-lg py-4">
         Envíanos un correo con tus datos y cuentanos un poco más sobre tu idea,
         nos encantaría trabajar contigo.
       </p>
     </div>
-    <div className="col-start-2 row-start-2 p-4">
+    <div className="hidden md:block md:col-start-2 md:row-start-2 md:p-4">
       <Image src="/contact_us.png" width="332" height="230" alt="contactanos" />
     </div>
   </div>

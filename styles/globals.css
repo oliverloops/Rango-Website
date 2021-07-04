@@ -25,6 +25,13 @@ textarea {
   max-height: 200px;
 }
 
+@media (min-width: 300px) and (max-width: 768px) {
+  textarea {
+    min-height: 260px;
+    max-height: 260px;
+  }
+}
+
 .marker-text-1 {
   position: relative;
 }
