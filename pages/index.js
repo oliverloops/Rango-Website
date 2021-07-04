@@ -148,13 +148,13 @@ const ContactBlock = () => (
     </div>
     <div className="col-start-2 row-start-1 w-3/4">
       <h1 className="font-sans font-black text-3xl">Contactános</h1>
-      <p className="font-sans text-lg py-2">
+      <p className="font-sans text-lg py-4">
         Envíanos un correo con tus datos y cuentanos un poco más sobre tu idea,
         nos encantaría trabajar contigo.
       </p>
     </div>
-    <div className="col-start-2 row-start-2">
-      <Image src="/contact_us.png" width="328" height="225" alt="contactanos" />
+    <div className="col-start-2 row-start-2 p-4">
+      <Image src="/contact_us.png" width="332" height="230" alt="contactanos" />
     </div>
   </div>
 );
