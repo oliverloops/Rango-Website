@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-between px-12 py-8 col-start-1">
+    <nav className="flex justify-between px-8 md:px-12 py-4 md:py-8 col-start-1">
       <div>
         <Link href="/">
           <a>
