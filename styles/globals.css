@@ -19,6 +19,12 @@ a {
   text-decoration: none;
 }
 
+textarea {
+  resize: none;
+  min-height: 200px;
+  max-height: 200px;
+}
+
 .marker-text-1 {
   position: relative;
 }

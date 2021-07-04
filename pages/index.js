@@ -38,7 +38,7 @@ const MainBlock = () => (
       </p>
     </div>
     <div className="col-start-2 row-start-1 place-self-center">
-      <Image src="/rango_logo.png" width="320" height="320" />
+      <Image src="/rango_logo.png" width="320" height="320" alt="rango logo" />
     </div>
     <div className="col-start-1 row-start-2 pl-12">
       <Link href="#">
@@ -142,16 +142,19 @@ const ProcessBlock = () => (
 );
 
 const ContactBlock = () => (
-  <div className="grid grid-cols-auto grid-rows-auto gap-2 px-4 py-8">
-    <div className="col-start-1 row-start-1">
+  <div className="grid grid-cols-2 grid-rows-auto gap-2 px-6 py-14">
+    <div className="col-start-1 row-start-1 row-end-3 px-8">
       <Form />
     </div>
-    <div className="col-start-2 row-start-1">
+    <div className="col-start-2 row-start-1 w-3/4">
       <h1 className="font-sans font-black text-3xl">Contactános</h1>
-      <p className="font-sans  text-lg">
+      <p className="font-sans text-lg py-2">
         Envíanos un correo con tus datos y cuentanos un poco más sobre tu idea,
         nos encantaría trabajar contigo.
       </p>
+    </div>
+    <div className="col-start-2 row-start-2">
+      <Image src="/contact_us.png" width="328" height="225" alt="contactanos" />
     </div>
   </div>
 );

@@ -7,7 +7,12 @@ const Navbar = () => {
       <div>
         <Link href="/">
           <a>
-            <Image src="/rango_text.png" width="100" height="45" />
+            <Image
+              src="/rango_text.png"
+              width="100"
+              height="45"
+              alt="rango text"
+            />
           </a>
         </Link>
       </div>
@@ -24,7 +29,7 @@ const Navbar = () => {
         <Link href="#">
           <a>
             <button className="bg-yellow-300 rounded-full py-4 px-7">
-              Contratános
+              Contactanos
             </button>
           </a>
         </Link>
