@@ -56,24 +56,24 @@ const MainBlock = () => (
 );
 
 const ServicesBlock = () => (
-  <div className="grid grid-cols-2 grid-auto-rows justify-items-start py-12 gap-2">
-    <div className="col-start-1 row-start-1 p-8 pl-12">
-      <h1 className="font-sans font-black text-5xl">
+  <div className="grid grid-cols-1 md:grid-cols-2 grid-auto-rows justify-items-start py-8 md:py-12 gap-2">
+    <div className="col-start-1 row-start-1 p-8 pl-8 md:pl-12">
+      <h1 className="font-sans font-black text-3xl md:text-5xl">
         <span className="marker-text-1">Hacemos</span> tus{" "}
         <span className="marker-text-2">ideas</span>{" "}
         <span className="marker-text-3">realidad </span> con alguno de nuestros
         servicios.
       </h1>
-      <p className="pt-6 text-lg">
+      <p className="pt-4 md:pt-6 text-md md:text-lg">
         Ya sea que necesites un sitio web que se adapte a tus necesidades,
         mejorar alguna de tus plataformas o llevar tu visionaría idea a la
         realidad, nosotros lo hacemos por ti.
       </p>
     </div>
-    <div className="col-start-2 row-start-1 place-self-center">
-      <div className="grid grid-auto-cols grid-auto-rows justify-items-center gap-6">
-        <div className="col-start-1 row-start-1 shadow-md rounded-2xl p-6">
-          <div className="flex flex-col justify-center bg-green-100 text-green-500 rounded-full w-20 h-20">
+    <div className="col-start-1 md:col-start-2 row-start-2 md:row-start-1 place-self-center">
+      <div className="grid grid-auto-cols grid-auto-rows justify-items-center gap-4 md:gap-6">
+        <div className="col-start-1 row-start-1 shadow-md rounded-2xl p-7 md:p-6">
+          <div className="flex flex-col justify-center bg-green-100 text-green-500 rounded-full w-16 h-16 md:w-20 md:h-20">
             <div className="flex justify-center self-center">
               <BiCodeAlt size={32} />
             </div>
@@ -82,8 +82,8 @@ const ServicesBlock = () => (
             Desarrollo <br /> Frontend
           </p>
         </div>
-        <div className="col-start-2 row-start-1  shadow-md rounded-2xl p-6">
-          <div className="flex flex-col justify-center bg-purple-100 text-purple-500 rounded-full w-20 h-20">
+        <div className="col-start-2 row-start-1 shadow-md rounded-2xl p-7 md:p-6">
+          <div className="flex flex-col justify-center bg-purple-100 text-purple-500 rounded-full w-16 h-16 md:w-20 md:h-20">
             <div className="flex justify-center self-center">
               <GoServer size={32} />
             </div>
@@ -92,8 +92,8 @@ const ServicesBlock = () => (
             Desarrollo <br /> Backend
           </p>
         </div>
-        <div className="col-start-1 row-start-2  shadow-md rounded-2xl p-6">
-          <div className="flex flex-col justify-center bg-red-100 text-red-600 rounded-full w-20 h-20">
+        <div className="col-start-1 row-start-2 shadow-md rounded-2xl p-7 md:p-6">
+          <div className="flex flex-col justify-center bg-red-100 text-red-600 rounded-full w-16 h-16 md:w-20 md:h-20">
             <div className="flex justify-center self-center">
               <MdWeb size={32} />
             </div>
@@ -102,14 +102,14 @@ const ServicesBlock = () => (
             Diseño <br /> UI/UX
           </p>
         </div>
-        <div className="col-start-2 row-start-2  shadow-md rounded-2xl p-6">
-          <div className="flex flex-col justify-center bg-blue-100 text-blue-500 rounded-full w-20 h-20">
+        <div className="col-start-2 row-start-2  shadow-md rounded-2xl p-7 md:p-6">
+          <div className="flex flex-col justify-center bg-blue-100 text-blue-500 rounded-full w-16 h-16 md:w-20 md:h-20">
             <div className="flex justify-center self-center">
               <AiOutlineMobile size={32} />
             </div>
           </div>
-          <p className="text-sm text-center pt-2">
-            Aplicaciones <br /> Móvil
+          <p className="text-sm  text-center pt-2">
+            Apps <br /> Móvil
           </p>
         </div>
       </div>
