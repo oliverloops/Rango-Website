@@ -1,12 +1,15 @@
 import Link from "next/link";
 import Image from "next/image";
+//Icons
 import { BsArrowDown } from "react-icons/bs";
 import { BiCodeAlt } from "react-icons/bi";
 import { GoServer } from "react-icons/go";
 import { MdWeb } from "react-icons/md";
 import { AiOutlineMobile } from "react-icons/ai";
+//Layout components
+import Navbar from "../layout/Navbar";
+import Footer from "../layout/Footer";
 //UI components
-import Navbar from "../components/Navbar";
 import Process from "../components/Process";
 import Form from "../components/Form";
 
@@ -21,6 +24,7 @@ const Home = () => {
       <ProcessBlock />
       <DownArrow />
       <ContactBlock />
+      <Footer />
     </>
   );
 };
@@ -142,7 +146,7 @@ const ProcessBlock = () => (
 );
 
 const ContactBlock = () => (
-  <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-auto gap-2 px-6 py-14">
+  <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-auto gap-0 md:gap-2 px-6 py-14">
     <div className="col-start-1 row-start-2 md:row-start-1 md:row-end-3 px-0 md:px-8 py-4 md:py-0">
       <Form />
     </div>
