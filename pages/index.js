@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
 //Icons
 import { BsArrowDown } from "react-icons/bs";
 import { BiCodeAlt } from "react-icons/bi";
@@ -30,17 +31,47 @@ const Home = () => {
 };
 
 const MainBlock = () => (
-  <div className="md:py-12 md:pt-12">
+  <div className="pt-4 md:py-12 md:pt-12">
     <div className="grid grid-cols-1 md:grid-cols-2 grid-auto-rows justify-items-start py-12 md:py-18 gap-2">
       <div className="col-start-1 row-start-2 md:row-start-1 p-4 md:p-8 pl-8 md:pl-12">
-        <h1 className="font-sans font-black text-3xl md:text-5xl">
+        <motion.h1
+          initial="pageInitial"
+          animate="pageAnimate"
+          variants={{
+            pageInitial: {
+              opacity: 0,
+              translateY: 100,
+            },
+            pageAnimate: {
+              opacity: 1,
+              translateY: 0,
+            },
+          }}
+          transition={{ duration: 0.7, delay: 0.15 }}
+          className="font-sans font-black text-3xl md:text-5xl"
+        >
           Construímos tus ambiciosos productos digitales.
-        </h1>
-        <p className="pt-4 md:pt-6 text-md md:text-lg">
+        </motion.h1>
+        <motion.p
+          initial="pageInitial"
+          animate="pageAnimate"
+          variants={{
+            pageInitial: {
+              opacity: 0,
+              translateY: 100,
+            },
+            pageAnimate: {
+              opacity: 1,
+              translateY: 0,
+            },
+          }}
+          transition={{ duration: 0.7, delay: 0.5 }}
+          className="pt-4 md:pt-6 text-md md:text-lg"
+        >
           Rango es una agencia de software. En Rango nosotros construímos el
           futuro, resolvemos problemas y creamos las mejores experiencias en web
           y móvil.
-        </p>
+        </motion.p>
       </div>
       <div className="col-start-1 md:col-start-2 row-start-1 place-self-center">
         <Image
@@ -53,13 +84,46 @@ const MainBlock = () => (
       <div className="col-start-1 row-start-3 md:row-start-2 place-self-center md:place-self-start md:pl-12">
         <Link href="#">
           <a>
-            <button className="bg-yellow-300 rounded-full py-4 px-7">
+            <motion.button
+              initial="pageInitial"
+              animate="pageAnimate"
+              variants={{
+                pageInitial: {
+                  opacity: 0,
+                  translateY: 50,
+                },
+                pageAnimate: {
+                  opacity: 1,
+                  translateY: 0,
+                },
+              }}
+              transition={{ duration: 0.7, delay: 1 }}
+              className="bg-yellow-300 rounded-full py-4 px-7"
+            >
               Contratános
-            </button>
+            </motion.button>
           </a>
         </Link>
         <Link href="#">
-          <a className="underline px-5">Nuestro portafolio</a>
+          <a className="underline px-5">
+            <motion.span
+              initial="pageInitial"
+              animate="pageAnimate"
+              variants={{
+                pageInitial: {
+                  opacity: 0,
+                  translateY: 50,
+                },
+                pageAnimate: {
+                  opacity: 1,
+                  translateY: 0,
+                },
+              }}
+              transition={{ duration: 0.7, delay: 1.25 }}
+            >
+              Nuestro portafolio
+            </motion.span>
+          </a>
         </Link>
       </div>
     </div>
