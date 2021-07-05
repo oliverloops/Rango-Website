@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const button = useRef();
@@ -27,7 +28,22 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="flex z-10 bg-white justify-between w-full px-8 md:px-12 py-4 fixed">
+      <motion.nav
+        initial="pageInitial"
+        animate="pageAnimate"
+        variants={{
+          pageInitial: {
+            opacity: 0,
+            translateY: -40,
+          },
+          pageAnimate: {
+            opacity: 1,
+            translateY: 0,
+          },
+        }}
+        transition={{ duration: 0.6 }}
+        className="flex z-10 bg-white justify-between w-full px-8 md:px-12 py-4 fixed"
+      >
         <div>
           <Link href="/">
             <a>
@@ -43,13 +59,13 @@ const Navbar = () => {
         </div>
         <div className="hidden md:block">
           <Link href="#">
-            <a className="px-4">Servicios</a>
+            <a className="mx-4">Servicios</a>
           </Link>
           <Link href="#">
-            <a className="px-4">Portafolio</a>
+            <a className="mx-4">Portafolio</a>
           </Link>
           <Link href="#">
-            <a className="px-4">Acerca de Nosotros</a>
+            <a className="mx-4">Acerca de Nosotros</a>
           </Link>
           <Link href="#">
             <a>
@@ -67,7 +83,7 @@ const Navbar = () => {
             ></div>
           </button>
         </div>
-      </nav>
+      </motion.nav>
       <ul
         ref={mobileMenu}
         className="flex flex-col md:hidden mobile-navbar-menu-closed fixed"
