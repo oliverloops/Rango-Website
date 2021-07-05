@@ -27,7 +27,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="flex z-10 bg-white justify-between px-8 md:px-12 py-4 md:py-8">
+      <nav className="flex z-10 bg-white justify-between w-full px-8 md:px-12 py-4 fixed">
         <div>
           <Link href="/">
             <a>
@@ -70,7 +70,7 @@ const Navbar = () => {
       </nav>
       <ul
         ref={mobileMenu}
-        className="flex flex-col md:hidden mobile-navbar-menu-closed absolute"
+        className="flex flex-col md:hidden mobile-navbar-menu-closed fixed"
       >
         <li className="p-4 px-6">
           <div className="border-b-2 border-gray-200 px-2 py-3">
