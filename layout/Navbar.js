@@ -70,19 +70,19 @@ const Navbar = () => {
       </nav>
       <ul
         ref={mobileMenu}
-        className="flex flex-col md:hidden mobile-navbar-menu-open absolute"
+        className="flex flex-col md:hidden mobile-navbar-menu-closed absolute"
       >
-        <li className="p-4">
+        <li className="border-b-2 border-gray-300 p-4">
           <Link href="#">
-            <a className="navlink px-4">Servicios</a>
+            <a className="px-4">Servicios</a>
           </Link>
         </li>
-        <li className="p-4">
+        <li className="border-b-2 border-gray-300 p-4">
           <Link href="#">
             <a className="navlink px-4">Portafolio</a>
           </Link>
         </li>
-        <li className="p-4">
+        <li className="border-b-2 border-gray-300 p-4">
           <Link href="#">
             <a className="navlink px-4">Acerca de Nosotros</a>
           </Link>
