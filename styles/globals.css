@@ -153,4 +153,17 @@ textarea {
     transform: translateY(-5px) rotate(0deg);
     transition: transform 0.15s ease;
   }
+
+  .mobile-navbar-menu-open {
+    display: block;
+    width: 100%;
+    max-width: 100vw;
+    z-index: 2;
+    position: fixed;
+    background-color: #fff;
+  }
+
+  .mobile-navbar-menu-closed {
+    display: none;
+  }
 }
