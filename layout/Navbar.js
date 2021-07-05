@@ -43,18 +43,18 @@ const Navbar = () => {
         </div>
         <div className="hidden md:block">
           <Link href="#">
-            <a className="navlink px-4">Servicios</a>
+            <a className="px-4">Servicios</a>
           </Link>
           <Link href="#">
-            <a className="navlink px-4">Portafolio</a>
+            <a className="px-4">Portafolio</a>
           </Link>
           <Link href="#">
-            <a className="navlink px-4">Acerca de Nosotros</a>
+            <a className="px-4">Acerca de Nosotros</a>
           </Link>
           <Link href="#">
             <a>
               <button className="bg-yellow-300 rounded-full py-4 px-7">
-                Contactanos
+                Contáctanos
               </button>
             </a>
           </Link>
@@ -72,20 +72,33 @@ const Navbar = () => {
         ref={mobileMenu}
         className="flex flex-col md:hidden mobile-navbar-menu-closed absolute"
       >
-        <li className="border-b-2 border-gray-300 p-4">
-          <Link href="#">
-            <a className="px-4">Servicios</a>
-          </Link>
+        <li className="p-4 px-6">
+          <div className="border-b-2 border-gray-200 px-2 py-3">
+            <Link href="#">
+              <a className="text-xl font-light">Servicios</a>
+            </Link>
+          </div>
         </li>
-        <li className="border-b-2 border-gray-300 p-4">
-          <Link href="#">
-            <a className="navlink px-4">Portafolio</a>
-          </Link>
+        <li className="p-4 px-6">
+          <div className="border-b-2 border-gray-200 px-2 py-2">
+            <Link href="#">
+              <a className="text-xl font-light">Portafolio</a>
+            </Link>
+          </div>
         </li>
-        <li className="border-b-2 border-gray-300 p-4">
-          <Link href="#">
-            <a className="navlink px-4">Acerca de Nosotros</a>
-          </Link>
+        <li className="p-4 px-6">
+          <div className="border-b-2 border-gray-200 px-2 py-2">
+            <Link href="#">
+              <a className="text-xl font-light">Acerca de Nosotros</a>
+            </Link>
+          </div>
+        </li>
+        <li className="p-4 px-6">
+          <div className="border-b-2 border-gray-200 px-2 py-2">
+            <Link href="#">
+              <a className="text-xl font-light">Contáctanos</a>
+            </Link>
+          </div>
         </li>
       </ul>
     </>
