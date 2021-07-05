@@ -114,6 +114,26 @@ textarea {
     border: none;
   }
 
+  .menu-button-line-open::before {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 27px;
+    background-color: #000;
+    transform: translateY(1px) rotate(45deg);
+    transition: transform 0.15s ease;
+  }
+
+  .menu-button-line-open::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 27px;
+    background-color: #000;
+    transform: translateY(0px) rotate(-45deg);
+    transition: transform 0.15s ease;
+  }
+
   .menu-button-line::before {
     content: "";
     display: block;

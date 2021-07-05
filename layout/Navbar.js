@@ -1,7 +1,23 @@
+import { useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
 const Navbar = () => {
+  const button = useRef();
+
+  const blockStyle = () => {
+    if (
+      button.current.className ===
+      "flex flex-col justify-center w-full h-full menu-button-line-open"
+    ) {
+      button.current.className =
+        "flex flex-col justify-center w-full h-full menu-button-line";
+    } else {
+      button.current.className =
+        "flex flex-col justify-center w-full h-full menu-button-line-open";
+    }
+  };
+
   return (
     <nav className="flex justify-between px-8 md:px-12 py-4 md:py-8 col-start-1">
       <div>
@@ -36,8 +52,11 @@ const Navbar = () => {
         </Link>
       </div>
       <div className="md:hidden">
-        <button className="menu-mobile-button">
-          <div className="flex flex-col justify-center w-full h-full menu-button-line"></div>
+        <button onClick={blockStyle} className="menu-mobile-button">
+          <div
+            ref={button}
+            className="flex flex-col justify-center w-full h-full menu-button-line"
+          ></div>
         </button>
       </div>
     </nav>
