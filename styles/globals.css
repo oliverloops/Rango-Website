@@ -3,6 +3,10 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Navbar keyframes */
+@keyframes transition {
+}
+
 html,
 body {
   padding: 0;
@@ -99,5 +103,34 @@ textarea {
     bottom: 4px;
     width: 124px;
     height: 15px;
+  }
+  /* Navbar menu button template */
+  .menu-mobile-button {
+    width: 27px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+  }
+
+  .menu-button-line::before {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 27px;
+    background-color: #000;
+    transform: translateY(5px) rotate(0deg);
+    transition: transform 0.15s ease;
+  }
+
+  .menu-button-line::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 27px;
+    background-color: #000;
+    transform: translateY(-5px) rotate(0deg);
+    transition: transform 0.15s ease;
   }
 }

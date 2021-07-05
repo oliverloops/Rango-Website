@@ -8,15 +8,16 @@ const Navbar = () => {
         <Link href="/">
           <a>
             <Image
+              className="rango-home-logo"
               src="/rango_text.png"
               width="100"
               height="45"
-              alt="rango text"
+              alt="rango text logo"
             />
           </a>
         </Link>
       </div>
-      <div>
+      <div className="hidden md:block">
         <Link href="#">
           <a className="px-4">Servicios</a>
         </Link>
@@ -33,6 +34,11 @@ const Navbar = () => {
             </button>
           </a>
         </Link>
+      </div>
+      <div className="md:hidden">
+        <button className="menu-mobile-button">
+          <div className="flex flex-col justify-center w-full h-full menu-button-line"></div>
+        </button>
       </div>
     </nav>
   );
