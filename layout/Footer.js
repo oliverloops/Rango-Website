@@ -195,7 +195,17 @@ const Footer = () => {
           transition={{ duration: 0.7, delay: 0.9 }}
           className="flex justify-center pt-6 pb-2"
         >
-          <small className="font-light">Rango Labs ©2021</small>
+          <small className="font-light">
+            Crafted with{" "}
+            <span role="img" aria-label="heart">
+              ❤️
+            </span>{" "}
+            &nbsp;and{" "}
+            <span role="img" aria-label="coffee">
+              ☕
+            </span>{" "}
+            &nbsp;at Rango Labs ©2021
+          </small>
         </motion.div>
       </footer>
       <div className="h-2 md:h-1 bg-yellow-300"></div>

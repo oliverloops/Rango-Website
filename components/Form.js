@@ -1,9 +1,34 @@
 import { useEffect } from "react";
 import Link from "next/link";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const Form = () => {
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) controls.start("pageAnimate");
+  }, [controls, inView]);
+
   return (
-    <form className="flex flex-col justify-center rounded-3xl md:rounded-2xl shadow-lg p-2 md:p-4">
+    <motion.form
+      ref={ref}
+      initial="pageInitial"
+      animate={controls}
+      variants={{
+        pageInitial: {
+          opacity: 0,
+          translateY: 250,
+        },
+        pageAnimate: {
+          opacity: 1,
+          translateY: 0,
+        },
+      }}
+      transition={{ duration: 0.7, delay: 0.5 }}
+      className="flex flex-col justify-center rounded-3xl md:rounded-2xl shadow-lg p-2 md:p-4"
+    >
       <label className="px-4 py-3 md:py-2 pt-6">
         <input
           className="bg-gray-200 rounded-lg px-4 py-2 w-full"
@@ -33,7 +58,7 @@ const Form = () => {
           </a>
         </Link>
       </div>
-    </form>
+    </motion.form>
   );
 };
 

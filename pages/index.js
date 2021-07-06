@@ -351,32 +351,21 @@ const ProcessBlock = () => {
 const ContactBlock = () => {
   const controls = useAnimation();
   const [ref, inView] = useInView();
+  const [domEl, inObserver] = useInView();
 
   useEffect(() => {
     if (inView) controls.start("pageAnimate");
   }, [controls, inView]);
 
+  useEffect(() => {
+    if (inObserver) controls.start("pageAnimate");
+  }, [controls, inObserver]);
+
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-auto gap-0 md:gap-2 px-6 py-14">
-      <motion.div
-        ref={ref}
-        initial="pageInitial"
-        animate={controls}
-        variants={{
-          pageInitial: {
-            opacity: 0,
-            translateY: 250,
-          },
-          pageAnimate: {
-            opacity: 1,
-            translateY: 0,
-          },
-        }}
-        transition={{ duration: 0.7, delay: 0.5 }}
-        className="col-start-1 row-start-2 md:row-start-1 md:row-end-3 px-0 md:px-8 py-4 md:py-0"
-      >
+      <div className="col-start-1 row-start-2 md:row-start-1 md:row-end-3 px-0 md:px-8 py-4 md:py-0">
         <Form />
-      </motion.div>
+      </div>
       <div className="col-start-1 md:col-start-2 row-start-1 p-2 md:p-0 w-full md:w-3/4">
         <motion.h1
           ref={ref}
@@ -419,7 +408,7 @@ const ContactBlock = () => {
         </motion.p>
       </div>
       <motion.div
-        ref={ref}
+        ref={domEl}
         initial="pageInitial"
         animate={controls}
         variants={{
