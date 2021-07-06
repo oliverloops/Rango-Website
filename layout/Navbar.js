@@ -28,23 +28,22 @@ const Navbar = () => {
 
   return (
     <>
-      <motion.nav
-        initial="pageInitial"
-        animate="pageAnimate"
-        variants={{
-          pageInitial: {
-            opacity: 0,
-            translateY: -40,
-          },
-          pageAnimate: {
-            opacity: 1,
-            translateY: 0,
-          },
-        }}
-        transition={{ duration: 0.6 }}
-        className="flex z-10 bg-white justify-between w-full px-8 md:px-12 py-4 fixed"
-      >
-        <div>
+      <nav className="flex z-10 bg-white justify-between w-full px-8 md:px-12 py-4 fixed">
+        <motion.div
+          initial="pageInitial"
+          animate="pageAnimate"
+          variants={{
+            pageInitial: {
+              opacity: 0,
+              translateY: -40,
+            },
+            pageAnimate: {
+              opacity: 1,
+              translateY: 0,
+            },
+          }}
+          transition={{ duration: 0.7 }}
+        >
           <Link href="/">
             <a>
               <Image
@@ -56,24 +55,92 @@ const Navbar = () => {
               />
             </a>
           </Link>
-        </div>
+        </motion.div>
         <div className="hidden md:block">
-          <Link href="#">
-            <a className="mx-4">Servicios</a>
-          </Link>
-          <Link href="#">
-            <a className="mx-4">Portafolio</a>
-          </Link>
-          <Link href="#">
-            <a className="mx-4">Acerca de Nosotros</a>
-          </Link>
-          <Link href="#">
-            <a>
-              <button className="bg-yellow-300 rounded-full py-4 px-7">
-                Contáctanos
-              </button>
-            </a>
-          </Link>
+          <div className="flex">
+            <motion.div
+              initial="pageInitial"
+              animate="pageAnimate"
+              variants={{
+                pageInitial: {
+                  opacity: 0,
+                  translateY: -40,
+                },
+                pageAnimate: {
+                  opacity: 1,
+                  translateY: 0,
+                },
+              }}
+              transition={{ duration: 0.6 }}
+              className="self-center"
+            >
+              <Link href="#">
+                <a className="mx-4">Servicios</a>
+              </Link>
+            </motion.div>
+            <motion.div
+              initial="pageInitial"
+              animate="pageAnimate"
+              variants={{
+                pageInitial: {
+                  opacity: 0,
+                  translateY: -40,
+                },
+                pageAnimate: {
+                  opacity: 1,
+                  translateY: 0,
+                },
+              }}
+              transition={{ duration: 0.6 }}
+              className="self-center"
+            >
+              <Link href="#">
+                <a className="mx-4">Portafolio</a>
+              </Link>
+            </motion.div>
+            <motion.div
+              initial="pageInitial"
+              animate="pageAnimate"
+              variants={{
+                pageInitial: {
+                  opacity: 0,
+                  translateY: -40,
+                },
+                pageAnimate: {
+                  opacity: 1,
+                  translateY: 0,
+                },
+              }}
+              transition={{ duration: 0.6 }}
+              className="self-center"
+            >
+              <Link href="#">
+                <a className="mx-4">Acerca de Nosotros</a>
+              </Link>
+            </motion.div>
+            <Link href="#">
+              <a>
+                <motion.button
+                  initial="pageInitial"
+                  animate="pageAnimate"
+                  variants={{
+                    pageInitial: {
+                      opacity: 0,
+                      translateY: -40,
+                    },
+                    pageAnimate: {
+                      opacity: 1,
+                      translateY: 0,
+                    },
+                  }}
+                  transition={{ duration: 0.6 }}
+                  className="bg-yellow-300 rounded-full py-4 px-7"
+                >
+                  Contáctanos
+                </motion.button>
+              </a>
+            </Link>
+          </div>
         </div>
         <div className="md:hidden">
           <button onClick={blockStyle} className="menu-mobile-button">
@@ -83,7 +150,7 @@ const Navbar = () => {
             ></div>
           </button>
         </div>
-      </motion.nav>
+      </nav>
       <ul
         ref={mobileMenu}
         className="flex flex-col md:hidden mobile-navbar-menu-closed fixed"
