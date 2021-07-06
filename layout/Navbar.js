@@ -71,7 +71,7 @@ const Navbar = () => {
                   translateY: 0,
                 },
               }}
-              transition={{ duration: 0.6 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
               className="self-center"
             >
               <Link href="#">
@@ -91,7 +91,7 @@ const Navbar = () => {
                   translateY: 0,
                 },
               }}
-              transition={{ duration: 0.6 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
               className="self-center"
             >
               <Link href="#">
@@ -111,7 +111,7 @@ const Navbar = () => {
                   translateY: 0,
                 },
               }}
-              transition={{ duration: 0.6 }}
+              transition={{ duration: 0.6, delay: 0.6 }}
               className="self-center"
             >
               <Link href="#">
@@ -133,7 +133,7 @@ const Navbar = () => {
                       translateY: 0,
                     },
                   }}
-                  transition={{ duration: 0.6 }}
+                  transition={{ duration: 0.6, delay: 0.8 }}
                   className="bg-yellow-300 rounded-full py-4 px-7"
                 >
                   Contáctanos
@@ -142,14 +142,29 @@ const Navbar = () => {
             </Link>
           </div>
         </div>
-        <div className="md:hidden">
+        <motion.div
+          initial="pageInitial"
+          animate="pageAnimate"
+          variants={{
+            pageInitial: {
+              opacity: 0,
+              translateY: -40,
+            },
+            pageAnimate: {
+              opacity: 1,
+              translateY: 0,
+            },
+          }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          className="md:hidden"
+        >
           <button onClick={blockStyle} className="menu-mobile-button">
             <div
               ref={button}
               className="flex flex-col justify-center w-full h-full menu-button-line"
             ></div>
           </button>
-        </div>
+        </motion.div>
       </nav>
       <ul
         ref={mobileMenu}

@@ -49,7 +49,7 @@ const MainBlock = () => (
               translateY: 0,
             },
           }}
-          transition={{ duration: 0.7, delay: 0.15 }}
+          transition={{ duration: 0.7, delay: 1.0 }}
           className="font-sans font-black text-3xl md:text-5xl"
         >
           Construímos tus ambiciosos productos digitales.
@@ -67,7 +67,7 @@ const MainBlock = () => (
               translateY: 0,
             },
           }}
-          transition={{ duration: 0.7, delay: 0.5 }}
+          transition={{ duration: 0.7, delay: 1.25 }}
           className="pt-4 md:pt-6 text-md md:text-lg"
         >
           Rango es una agencia de software. En Rango nosotros construímos el
@@ -99,7 +99,7 @@ const MainBlock = () => (
                   translateY: 0,
                 },
               }}
-              transition={{ duration: 0.7, delay: 1 }}
+              transition={{ duration: 0.7, delay: 1.5 }}
               className="bg-yellow-300 rounded-full py-4 px-7"
             >
               Contratános
@@ -121,7 +121,7 @@ const MainBlock = () => (
                   translateY: 0,
                 },
               }}
-              transition={{ duration: 0.7, delay: 1.25 }}
+              transition={{ duration: 0.7, delay: 1.75 }}
             >
               Nuestro portafolio
             </motion.span>
