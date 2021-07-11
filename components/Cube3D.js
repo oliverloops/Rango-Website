@@ -2,7 +2,12 @@ import React, { useState, useEffect } from "react";
 import * as THREE from "three";
 import { Canvas, useFrame, extend } from "@react-three/fiber";
 import { shaderMaterial, OrbitControls } from "@react-three/drei";
-//import glsl from "babel-plugin-glsl";
+
+const glsl = () => {
+  if (typeof window === undefined) {
+    return React.lazy(() => import("babel-plugin-glsl/macro"));
+  }
+};
 
 //Rango Yellow Gradient
 //linear-gradient(119.86deg, #FFB013 20.04%, #ECDB5E 85.9%)
@@ -16,19 +21,21 @@ const MyRotatingBox = () => {
     myMesh.current.rotation.x = a;
   });
 
-  const gradientMaterial = shaderMaterial({
-    time: 0,
-    uniforms: {
-      color1: {
-        value: new THREE.Color("blue"),
-      },
-      color2: {
-        value: new THREE.Color("purple"),
-      },
-    },
-  });
+  const GradientMaterial = shaderMaterial(
+    {
+      time: 0,
+      color: new THREE.Color("blue"),
+    }, // vertex shader
+    glsl`
+    varying vec2 vUv;
+    void main() {
+      vUv = uv;
+      gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+    }
+  `
+  );
 
-  extend({ gradientMaterial });
+  extend({ GradientMaterial });
 
   return (
     <mesh
@@ -39,12 +46,12 @@ const MyRotatingBox = () => {
       ref={myMesh}
     >
       <boxBufferGeometry args={[2, 2, 2]} />
-      <meshStandardMaterial
+      {/* <meshStandardMaterial
         color="#FFB013"
         uniforms={{ color1: "blue", color2: "purple" }}
-      />
+      /> */}
       <OrbitControls />
-      {/* <gradientMaterial attach="material" time={1} /> */}
+      <gradientMaterial attach="material" time={1} />
     </mesh>
   );
 };
