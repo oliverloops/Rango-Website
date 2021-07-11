@@ -19,7 +19,9 @@ import Form from "../components/Form";
 const Home = () => {
   return (
     <>
-      <Navbar />
+      <div className="pb-2 md:pb-10">
+        <Navbar />
+      </div>
       <MainBlock />
       <DownArrow />
       <ServicesBlock />

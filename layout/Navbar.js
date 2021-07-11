@@ -74,7 +74,7 @@ const Navbar = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="self-center"
             >
-              <Link href="#">
+              <Link href="/services">
                 <a className="mx-4">Servicios</a>
               </Link>
             </motion.div>
@@ -114,7 +114,7 @@ const Navbar = () => {
               transition={{ duration: 0.6, delay: 0.6 }}
               className="self-center"
             >
-              <Link href="#">
+              <Link href="/about">
                 <a className="mx-4">Acerca de Nosotros</a>
               </Link>
             </motion.div>

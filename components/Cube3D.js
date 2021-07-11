@@ -24,13 +24,21 @@ const MyRotatingBox = () => {
   const GradientMaterial = shaderMaterial(
     {
       time: 0,
-      color: new THREE.Color("blue"),
+      color: new THREE.Color("#FFB013"),
     }, // vertex shader
     glsl`
     varying vec2 vUv;
     void main() {
       vUv = uv;
       gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+    }
+  `, // fragment shader
+    glsl`
+    uniform float time;
+    uniform vec3 color;
+    varying vec2 vUv;
+    void main() {
+      gl_FragColor.rgba = vec4(0.5 + 0.3 * sin(vUv.yxx + time) + color, 1.0);
     }
   `
   );
@@ -51,7 +59,7 @@ const MyRotatingBox = () => {
         uniforms={{ color1: "blue", color2: "purple" }}
       /> */}
       <OrbitControls />
-      <gradientMaterial attach="material" time={1} />
+      <gradientMaterial attach="material" color="#FFB013" time={1} />
     </mesh>
   );
 };

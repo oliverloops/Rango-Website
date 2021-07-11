@@ -77,6 +77,22 @@ textarea {
   z-index: -1;
 }
 
+.marker-text-4 {
+  position: relative;
+}
+
+.marker-text-4::before {
+  content: "";
+  position: absolute;
+  left: 45%;
+  bottom: -3px;
+  width: 210px;
+  height: 21px;
+  transform: skew(-16deg) translateX(-40%);
+  background: rgba(253, 233, 151, 1);
+  z-index: -1;
+}
+
 /* Global media query */
 @media (min-width: 300px) and (max-width: 768px) {
   textarea {
