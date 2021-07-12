@@ -18,8 +18,28 @@ const Services = () => (
     <div className="pb-12">
       <Navbar />
     </div>
-    <main className="p-12">
-      <motion.h1
+    <main>
+      <div className="p-12">
+        <motion.h1
+          initial="pageInitial"
+          animate="pageAnimate"
+          variants={{
+            pageInitial: {
+              opacity: 0,
+              translateY: 100,
+            },
+            pageAnimate: {
+              opacity: 1,
+              translateY: 0,
+            },
+          }}
+          transition={{ duration: 0.7, delay: 0.1 }}
+          className="font-sans font-bold text-center text-xl md:text-2xl p-4"
+        >
+          <span className="marker-text-4">Nuestros Servicios</span>
+        </motion.h1>
+      </div>
+      <motion.div
         initial="pageInitial"
         animate="pageAnimate"
         variants={{
@@ -32,24 +52,22 @@ const Services = () => (
             translateY: 0,
           },
         }}
-        transition={{ duration: 0.7, delay: 1.0 }}
-        className="font-sans font-bold text-center text-xl md:text-2xl p-4"
+        transition={{ duration: 0.7, delay: 0.2 }}
+        className="flex flex-col px-8 md:px-12 md:py-4 md:max-w-6xl"
       >
-        <span className="marker-text-4">Nuestros Servicios</span>
-      </motion.h1>
-      <div className="flex flex-col justify-center md:p-10">
-        <p className="text-lg md:px-8">
-          Te acompañamos durante el desarrollo de tu proyecto y adaptamos la
-          tecnología y nuestras metodologias <br /> a los requerimientos que
-          necesite
-        </p>
-        <p className="text-lg font-bold md:px-8">
-          Imaginalo. Nosotros lo hacemos realidad.
-        </p>
-      </div>
+        <div className="place-self-center">
+          <p className="text-xl md:text-3xl">
+            Te acompañamos durante el desarrollo de tu proyecto y adaptamos la
+            tecnología y nuestras metodologias a los requerimientos que necesite
+          </p>
+          <p className="md:text-xl font-black pt-2">
+            Imaginalo. Nosotros lo hacemos realidad.
+          </p>
+        </div>
+      </motion.div>
+      <ServicesBlock />
+      <ContactBlock />
     </main>
-    <ServicesBlock />
-    <ContactBlock />
     <Footer />
   </>
 );
@@ -79,7 +97,7 @@ const ServicesBlock = () => {
               translateY: 0,
             },
           }}
-          transition={{ duration: 0.7, delay: 0.15 }}
+          transition={{ duration: 0.7, delay: 0.25 }}
           className="font-sans font-black text-3xl md:text-5xl"
         >
           Creamos tu visión e ideas con tecnologías seguras y escalables

@@ -3,10 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Navbar keyframes */
-@keyframes transition {
-}
-
 html,
 body {
   padding: 0;
