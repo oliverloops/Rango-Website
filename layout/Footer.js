@@ -21,14 +21,30 @@ const Footer = () => {
       <footer className="flex flex-col pt-8 px-8 md:px-12">
         <div className="flex flex-col md:flex-row justify-between">
           <div className="flex flex-col md:flex-row">
-            <div className="place-self-center">
+            <motion.div
+              ref={ref}
+              initial="pageInitial"
+              animate={controls}
+              variants={{
+                pageInitial: {
+                  opacity: 0,
+                  translateY: 50,
+                },
+                pageAnimate: {
+                  opacity: 1,
+                  translateY: 0,
+                },
+              }}
+              transition={{ duration: 0.7 }}
+              className="place-self-center"
+            >
               <Image
                 src="/rango_logo.png"
                 width="90"
                 height="90"
                 alt="rango logo"
               />
-            </div>
+            </motion.div>
             <div className="flex flex-col text-center py-6 px-8">
               <motion.p
                 ref={ref}
