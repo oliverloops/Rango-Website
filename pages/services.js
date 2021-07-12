@@ -23,14 +23,19 @@ const Services = () => (
           },
         }}
         transition={{ duration: 0.7, delay: 1.0 }}
-        className="font-sans font-bold text-center text-xl md:text-2xl"
+        className="font-sans font-bold text-center text-xl md:text-2xl p-4"
       >
         <span className="marker-text-4">Nuestros Servicios</span>
       </motion.h1>
-      <p>
-        Te acompañamos durante el desarrollo de tu proyecto y adaptamos la
-        tecnología a los requerimientos necesarios
-      </p>
+      <div className="flex flex-col justify-center md:p-10">
+        <p className="text-lg md:px-8">
+          Te acompañamos durante el desarrollo de tu proyecto y adaptamos la
+          tecnología y metodología a los requerimientos que necesite
+        </p>
+        <p className="text-lg font-bold md:px-8">
+          Imaginalo. Nosotros lo hacemos realidad.
+        </p>
+      </div>
     </main>
     <Footer />
   </>
