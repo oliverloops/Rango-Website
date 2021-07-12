@@ -224,16 +224,12 @@ const Footer = () => {
             Crafted with{" "}
             <span role="img" aria-label="heart">
               ❤️
-            </span>{" "}
-            &nbsp;and{" "}
-            <span role="img" aria-label="coffee">
-              ☕
-            </span>{" "}
-            &nbsp;at Rango Labs ©2021
+            </span>
+            &nbsp; at Rango Labs ©2021
           </small>
         </motion.div>
       </footer>
-      <div className="h-2 md:h-1 bg-yellow-300"></div>
+      <div className="h-2 bg-yellow-300"></div>
     </>
   );
 };
