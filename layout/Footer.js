@@ -40,8 +40,8 @@ const Footer = () => {
             >
               <Image
                 src="/rango_logo.png"
-                width="90"
-                height="90"
+                width="92"
+                height="92"
                 alt="rango logo"
               />
             </motion.div>

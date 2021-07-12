@@ -172,7 +172,7 @@ const Navbar = () => {
       >
         <li className="p-4 px-6">
           <div className="border-b-2 border-gray-200 px-2 py-3">
-            <Link href="#">
+            <Link href="/services">
               <a className="text-xl font-light">Servicios</a>
             </Link>
           </div>
@@ -186,7 +186,7 @@ const Navbar = () => {
         </li>
         <li className="p-4 px-6">
           <div className="border-b-2 border-gray-200 px-2 py-2">
-            <Link href="#">
+            <Link href="/about">
               <a className="text-xl font-light">Acerca de Nosotros</a>
             </Link>
           </div>
