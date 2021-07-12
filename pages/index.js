@@ -206,7 +206,7 @@ const ServicesBlock = () => {
               },
             }}
             transition={{ duration: 0.7, delay: 0.6 }}
-            className="col-start-1 row-start-1 shadow-md rounded-2xl p-7 md:p-6"
+            className="col-start-1 row-start-1 shadow-md hover:shadow-xl rounded-2xl p-7 md:p-6"
           >
             <div className="flex flex-col justify-center bg-green-100 text-green-500 rounded-full w-16 h-16 md:w-20 md:h-20">
               <div className="flex justify-center self-center">
@@ -232,7 +232,7 @@ const ServicesBlock = () => {
               },
             }}
             transition={{ duration: 0.7, delay: 0.7 }}
-            className="col-start-2 row-start-1 shadow-md rounded-2xl p-7 md:p-6"
+            className="col-start-2 row-start-1 shadow-md hover:shadow-xl rounded-2xl p-7 md:p-6"
           >
             <div className="flex flex-col justify-center bg-purple-100 text-purple-500 rounded-full w-16 h-16 md:w-20 md:h-20">
               <div className="flex justify-center self-center">
@@ -258,7 +258,7 @@ const ServicesBlock = () => {
               },
             }}
             transition={{ duration: 0.7, delay: 0.8 }}
-            className="col-start-1 row-start-2 shadow-md rounded-2xl p-7 md:p-6"
+            className="col-start-1 row-start-2 shadow-md hover:shadow-xl rounded-2xl p-7 md:p-6"
           >
             <div className="flex flex-col justify-center bg-red-100 text-red-600 rounded-full w-16 h-16 md:w-20 md:h-20">
               <div className="flex justify-center self-center">
@@ -284,7 +284,7 @@ const ServicesBlock = () => {
               },
             }}
             transition={{ duration: 0.7, delay: 0.9 }}
-            className="col-start-2 row-start-2  shadow-md rounded-2xl p-7 md:p-6"
+            className="col-start-2 row-start-2 shadow-md hover:shadow-xl rounded-2xl p-7 md:p-6"
           >
             <div className="flex flex-col justify-center bg-blue-100 text-blue-500 rounded-full w-16 h-16 md:w-20 md:h-20">
               <div className="flex justify-center self-center">
