@@ -353,28 +353,114 @@ const ProcessBlock = () => {
 
 const ToolsBlock = () => {
   return (
-    <div className="grid grid-col-1 grid-row-auto gap-2">
+    <div className="grid grid-col-1 grid-row-3 gap-4">
       <div className="col text-center justify-self-center">
         <span className="flex justify-center text-yellow-300 p-2">
           <GoServer size={34} />
         </span>
         <p className="text-gray-300 text-lg pt-2">Tecnologías que usamos</p>
-        <p className="text-gray-600 text-3xl">Solo lo mejor o nada.</p>
+        <p className="text-gray-600 text-3xl font-semibold">
+          Solo lo mejor o nada.
+        </p>
       </div>
       <div className="col px-4 py-8">
-        <div className="grid grid-col-4 grid-row-auto">
-          <Image
-            src="/vercel_logo.svg"
-            width={"70px"}
-            height={"30px"}
-            alt="Vercel"
-          />
-          <Image
-            src="/next_logo.svg"
-            width={"80px"}
-            height={"60px"}
-            alt="Vercel"
-          />
+        <div className="grid grid-col-1 grid-row-auto md:grid-col-4 md:grid-row-3 text-center gap-2 p-8">
+          <div className="col col-start-1 row-start-1">
+            <Image
+              src="/vercel_logo.svg"
+              width={"120px"}
+              height={"80px"}
+              alt="Vercel"
+            />
+          </div>
+          <div className="col col-start-1 row-start-2">
+            <Image
+              src="/airtable_logo.svg"
+              width={"130px"}
+              height={"80px"}
+              alt="Airtable"
+            />
+          </div>
+          <div className="col col-start-1 row-start-3">
+            <Image
+              src="/cloudinary_logo.svg"
+              width={"130px"}
+              height={"80px"}
+              alt="Cloudinary"
+            />
+          </div>
+          <div className="col col-start-2 row-start-1">
+            <Image
+              src="/next_logo.svg"
+              width={"80px"}
+              height={"60px"}
+              alt="Next.js"
+            />
+          </div>
+          <div className="col col-start-2 row-start-2">
+            <Image
+              src="/netlify_logo.svg"
+              width={"130px"}
+              height={"35px"}
+              alt="Netlify"
+            />
+          </div>
+          <div className="col col-start-2 row-start-3">
+            <Image
+              src="/do_logo.svg"
+              width={"130px"}
+              height={"80px"}
+              alt="Digital Ocean"
+            />
+          </div>
+          <div className="col col-start-3 row-start-1">
+            <Image
+              src="/react_logo.svg"
+              width={"80px"}
+              height={"60px"}
+              alt="React"
+            />
+          </div>
+          <div className="col col-start-3 row-start-2">
+            <Image
+              src="/sanity_logo.svg"
+              width={"100px"}
+              height={"60px"}
+              alt="Sanity"
+            />
+          </div>
+          <div className="col col-start-3 row-start-3">
+            <Image
+              src="/svelte_logo.svg"
+              width={"100px"}
+              height={"60px"}
+              alt="Svelte"
+            />
+          </div>
+          <div className="col col-start-4 row-start-1">
+            <Image
+              src="/stripe_logo.svg"
+              width={"80px"}
+              height={"60px"}
+              alt="Stripe"
+            />
+          </div>
+          <div className="col col-start-4 row-start-2">
+            <Image
+              src="/prisma_logo.svg"
+              width={"110px"}
+              height={"80px"}
+              alt="Prisma"
+            />
+          </div>
+          <div className="col col-start-4 row-start-3">
+            <Image
+              src="/auth0_logo.svg"
+              width={"110px"}
+              height={"80px"}
+              alt="Auth0"
+            />
+          </div>
         </div>
       </div>
     </div>
