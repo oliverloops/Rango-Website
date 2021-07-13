@@ -361,12 +361,18 @@ const ToolsBlock = () => {
         <p className="text-gray-300 text-lg pt-2">Tecnologías que usamos</p>
         <p className="text-gray-600 text-3xl">Solo lo mejor o nada.</p>
       </div>
-      <div className="col">
+      <div className="col px-4 py-8">
         <div className="grid grid-col-4 grid-row-auto">
           <Image
             src="/vercel_logo.svg"
             width={"70px"}
             height={"30px"}
+            alt="Vercel"
+          />
+          <Image
+            src="/next_logo.svg"
+            width={"80px"}
+            height={"60px"}
             alt="Vercel"
           />
         </div>
