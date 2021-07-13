@@ -193,7 +193,7 @@ const Navbar = () => {
         </li>
         <li className="p-4 px-6">
           <div className="border-b-2 border-gray-200 px-2 py-2">
-            <Link href="#">
+            <Link href="/#contact-form">
               <a className="text-xl font-light">Contáctanos</a>
             </Link>
           </div>

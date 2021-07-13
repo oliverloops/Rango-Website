@@ -29,6 +29,9 @@ const Home = () => {
       <ProcessBlock />
       <DownArrow />
       <ToolsBlock />
+      <div id="contact-form">
+        <DownArrow />
+      </div>
       <ContactBlock />
       <Footer />
     </>
@@ -87,7 +90,7 @@ const MainBlock = () => (
         />
       </div>
       <div className="col-start-1 row-start-3 md:row-start-2 place-self-center md:place-self-start md:pl-12">
-        <Link href="#">
+        <Link href="#contact-form">
           <a>
             <motion.button
               initial="pageInitial"
@@ -352,117 +355,214 @@ const ProcessBlock = () => {
 };
 
 const ToolsBlock = () => {
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) controls.start("pageAnimate");
+  }, [controls, inView]);
+
   return (
     <div className="grid grid-col-1 grid-row-3 gap-4">
       <div className="col text-center justify-self-center">
-        <span className="flex justify-center text-yellow-300 p-2">
+        <motion.span
+          ref={ref}
+          initial="pageInitial"
+          animate={controls}
+          variants={{
+            pageInitial: {
+              opacity: 0,
+              translateY: 100,
+            },
+            pageAnimate: {
+              opacity: 1,
+              translateY: 0,
+            },
+          }}
+          transition={{ duration: 0.7, delay: 0.15 }}
+          className="flex justify-center text-yellow-300 p-2"
+        >
           <GoServer size={34} />
-        </span>
-        <p className="text-gray-300 text-lg pt-2">Tecnologías que usamos</p>
-        <p className="text-gray-600 text-3xl font-semibold">
+        </motion.span>
+        <motion.p
+          ref={ref}
+          initial="pageInitial"
+          animate={controls}
+          variants={{
+            pageInitial: {
+              opacity: 0,
+              translateY: 100,
+            },
+            pageAnimate: {
+              opacity: 1,
+              translateY: 0,
+            },
+          }}
+          transition={{ duration: 0.7, delay: 0.2 }}
+          className="text-gray-300 text-lg pt-2"
+        >
+          Tecnologías que usamos
+        </motion.p>
+        <motion.p
+          ref={ref}
+          initial="pageInitial"
+          animate={controls}
+          variants={{
+            pageInitial: {
+              opacity: 0,
+              translateY: 100,
+            },
+            pageAnimate: {
+              opacity: 1,
+              translateY: 0,
+            },
+          }}
+          transition={{ duration: 0.7, delay: 0.3 }}
+          className="text-gray-600 text-3xl font-semibold"
+        >
           Solo lo mejor o nada.
-        </p>
+        </motion.p>
       </div>
-      <div className="col px-4 py-8">
+      <motion.div
+        ref={ref}
+        initial="pageInitial"
+        animate={controls}
+        variants={{
+          pageInitial: {
+            opacity: 0,
+            translateY: 100,
+          },
+          pageAnimate: {
+            opacity: 1,
+            translateY: 0,
+          },
+        }}
+        transition={{ duration: 0.7, delay: 0.4 }}
+        className="col px-4 py-8"
+      >
         <div className="grid grid-col-2 grid-row-auto md:grid-col-4 md:grid-row-3 text-center gap-2 p-4 md:p-8">
-          <div className="col col-start-1 row-start-1">
-            <Image
-              src="/vercel_logo.svg"
-              width={"120px"}
-              height={"80px"}
-              alt="Vercel"
-            />
+          <div className="col col-start-1 row-start-1 justify-self-center">
+            <a href="https://vercel.com">
+              <Image
+                src="/vercel_logo.svg"
+                width={"120px"}
+                height={"80px"}
+                alt="Vercel"
+              />
+            </a>
           </div>
-          <div className="col col-start-1 row-start-3 md:row-start-2">
-            <Image
-              src="/airtable_logo.svg"
-              width={"130px"}
-              height={"80px"}
-              alt="Airtable"
-            />
+          <div className="col col-start-1 row-start-3 md:row-start-2 self-center">
+            <a href="https://www.prisma.io/">
+              <Image
+                src="/prisma_logo.svg"
+                width={"120px"}
+                height={"80px"}
+                alt="Prisma"
+              />
+            </a>
           </div>
-          <div className="col col-start-1 row-start-5 md:row-start-3">
-            <Image
-              src="/cloudinary_logo.svg"
-              width={"130px"}
-              height={"80px"}
-              alt="Cloudinary"
-            />
+          <div className="col col-start-1 row-start-5 md:row-start-3 self-center">
+            <a href="https://cloudinary.com/">
+              <Image
+                src="/cloudinary_logo.svg"
+                width={"130px"}
+                height={"80px"}
+                alt="Cloudinary"
+              />
+            </a>
           </div>
-          <div className="col col-start-2 row-start-1">
-            <Image
-              src="/next_logo.svg"
-              width={"80px"}
-              height={"60px"}
-              alt="Next.js"
-            />
+          <div className="col col-start-2 row-start-1 self-center">
+            <a href="https://nextjs.org/">
+              <Image
+                src="/next_logo.svg"
+                width={"80px"}
+                height={"60px"}
+                alt="Next.js"
+              />
+            </a>
           </div>
-          <div className="col col-start-2 row-start-3 md:row-start-2">
-            <Image
-              src="/netlify_logo.svg"
-              width={"130px"}
-              height={"35px"}
-              alt="Netlify"
-            />
+          <div className="col col-start-2 row-start-3 md:row-start-2 self-center">
+            <a href="https://svelte.dev/">
+              <Image
+                src="/svelte_logo.svg"
+                width={"100px"}
+                height={"60px"}
+                alt="Svelte"
+              />
+            </a>
           </div>
-          <div className="col col-start-2 row-start-5 md:row-start-3">
-            <Image
-              src="/do_logo.svg"
-              width={"130px"}
-              height={"80px"}
-              alt="Digital Ocean"
-            />
+          <div className="col col-start-2 row-start-5 md:row-start-3 self-center">
+            <a href="https://www.digitalocean.com/">
+              <Image
+                src="/do_logo.svg"
+                width={"130px"}
+                height={"80px"}
+                alt="Digital Ocean"
+              />
+            </a>
           </div>
-          <div className="col col-start-1 md:col-start-3 row-start-2 md:row-start-1">
-            <Image
-              src="/react_logo.svg"
-              width={"80px"}
-              height={"60px"}
-              alt="React"
-            />
+          <div className="col col-start-1 md:col-start-3 row-start-2 md:row-start-1 self-center">
+            <a href="https://www.sanity.io/">
+              <Image
+                src="/sanity_logo.svg"
+                width={"100px"}
+                height={"60px"}
+                alt="Sanity"
+              />
+            </a>
           </div>
-          <div className="col col-start-1 md:col-start-3 row-start-4 md:row-start-2">
-            <Image
-              src="/sanity_logo.svg"
-              width={"100px"}
-              height={"60px"}
-              alt="Sanity"
-            />
+          <div className="col col-start-1 md:col-start-3 row-start-4 md:row-start-2 self-center">
+            <a href="https://reactjs.org/">
+              <Image
+                src="/react_logo.svg"
+                width={"80px"}
+                height={"60px"}
+                alt="React"
+              />
+            </a>
           </div>
-          <div className="col col-start-1 md:col-start-3 row-start-6 md:row-start-3">
-            <Image
-              src="/svelte_logo.svg"
-              width={"100px"}
-              height={"60px"}
-              alt="Svelte"
-            />
+          <div className="col col-start-1 md:col-start-3 row-start-6 md:row-start-3 self-center">
+            <a href="https://www.netlify.com/">
+              <Image
+                src="/netlify_logo.svg"
+                width={"130px"}
+                height={"35px"}
+                alt="Netlify"
+              />
+            </a>
           </div>
-          <div className="col col-start-2 md:col-start-4 row-start-2 md:row-start-1">
-            <Image
-              src="/stripe_logo.svg"
-              width={"80px"}
-              height={"60px"}
-              alt="Stripe"
-            />
+          <div className="col col-start-2 md:col-start-4 row-start-2 md:row-start-1 self-center">
+            <a href="https://stripe.com/">
+              <Image
+                src="/stripe_logo.svg"
+                width={"80px"}
+                height={"60px"}
+                alt="Stripe"
+              />
+            </a>
           </div>
-          <div className="col col-start-2 md:col-start-4 row-start-4 md:row-start-2">
-            <Image
-              src="/prisma_logo.svg"
-              width={"110px"}
-              height={"80px"}
-              alt="Prisma"
-            />
+          <div className="col col-start-2 md:col-start-4 row-start-4 md:row-start-2 self-center">
+            <a href="https://airtable.com/">
+              <Image
+                src="/airtable_logo.svg"
+                width={"130px"}
+                height={"80px"}
+                alt="Airtable"
+              />
+            </a>
           </div>
-          <div className="col col-start-2 md:col-start-4 row-start-6 md:row-start-3">
-            <Image
-              src="/auth0_logo.svg"
-              width={"110px"}
-              height={"80px"}
-              alt="Auth0"
-            />
+          <div className="col col-start-2 md:col-start-4 row-start-6 md:row-start-3 self-center">
+            <a href="https://auth0.com/">
+              <Image
+                src="/auth0_logo.svg"
+                width={"110px"}
+                height={"80px"}
+                alt="Auth0"
+              />
+            </a>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

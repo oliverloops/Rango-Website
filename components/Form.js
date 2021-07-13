@@ -36,14 +36,21 @@ const Form = () => {
           placeholder="Ingresa tu nombre"
         />
       </label>
-      <label className="px-4 py-3 md:py-2">
+      <label className="px-4 py-2">
         <input
           className="bg-gray-200 rounded-lg px-4 py-2 w-full"
           type="text"
           placeholder="Ingresa tu correo electrónico"
         />
       </label>
-      <label className="px-4 py-3 md:py-2">
+      <label className="px-4 py-2">
+        <input
+          className="bg-gray-200 rounded-lg px-4 py-2 w-full"
+          type="text"
+          placeholder="Ingresa tu número telefónico (opcional)"
+        />
+      </label>
+      <label className="px-4 py-2">
         <textarea
           className="bg-gray-200 rounded-lg px-4 py-2 w-full"
           placeholder="Aquí puedes agregar más detalles, la idea que tengas en mente o preguntas que tengas al respecto."
