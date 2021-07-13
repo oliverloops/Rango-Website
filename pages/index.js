@@ -28,6 +28,7 @@ const Home = () => {
       <DownArrow />
       <ProcessBlock />
       <DownArrow />
+      <ToolsBlock />
       <ContactBlock />
       <Footer />
     </>
@@ -347,6 +348,30 @@ const ProcessBlock = () => {
         </Process>
       </div>
     </>
+  );
+};
+
+const ToolsBlock = () => {
+  return (
+    <div className="grid grid-col-1 grid-row-auto gap-2">
+      <div className="col text-center justify-self-center">
+        <span className="flex justify-center text-yellow-300 p-2">
+          <GoServer size={34} />
+        </span>
+        <p className="text-gray-300 text-lg pt-2">Tecnologías que usamos</p>
+        <p className="text-gray-600 text-3xl">Solo lo mejor o nada.</p>
+      </div>
+      <div className="col">
+        <div className="grid grid-col-4 grid-row-auto">
+          <Image
+            src="/vercel_logo.svg"
+            width={"70px"}
+            height={"30px"}
+            alt="Vercel"
+          />
+        </div>
+      </div>
+    </div>
   );
 };
 
