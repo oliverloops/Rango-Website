@@ -364,7 +364,7 @@ const ToolsBlock = () => {
         </p>
       </div>
       <div className="col px-4 py-8">
-        <div className="grid grid-col-1 grid-row-auto md:grid-col-4 md:grid-row-3 text-center gap-2 p-8">
+        <div className="grid grid-col-2 grid-row-auto md:grid-col-4 md:grid-row-3 text-center gap-2 p-4 md:p-8">
           <div className="col col-start-1 row-start-1">
             <Image
               src="/vercel_logo.svg"
@@ -373,7 +373,7 @@ const ToolsBlock = () => {
               alt="Vercel"
             />
           </div>
-          <div className="col col-start-1 row-start-2">
+          <div className="col col-start-1 row-start-3 md:row-start-2">
             <Image
               src="/airtable_logo.svg"
               width={"130px"}
@@ -381,7 +381,7 @@ const ToolsBlock = () => {
               alt="Airtable"
             />
           </div>
-          <div className="col col-start-1 row-start-3">
+          <div className="col col-start-1 row-start-5 md:row-start-3">
             <Image
               src="/cloudinary_logo.svg"
               width={"130px"}
@@ -397,7 +397,7 @@ const ToolsBlock = () => {
               alt="Next.js"
             />
           </div>
-          <div className="col col-start-2 row-start-2">
+          <div className="col col-start-2 row-start-3 md:row-start-2">
             <Image
               src="/netlify_logo.svg"
               width={"130px"}
@@ -405,7 +405,7 @@ const ToolsBlock = () => {
               alt="Netlify"
             />
           </div>
-          <div className="col col-start-2 row-start-3">
+          <div className="col col-start-2 row-start-5 md:row-start-3">
             <Image
               src="/do_logo.svg"
               width={"130px"}
@@ -413,7 +413,7 @@ const ToolsBlock = () => {
               alt="Digital Ocean"
             />
           </div>
-          <div className="col col-start-3 row-start-1">
+          <div className="col col-start-1 md:col-start-3 row-start-2 md:row-start-1">
             <Image
               src="/react_logo.svg"
               width={"80px"}
@@ -421,7 +421,7 @@ const ToolsBlock = () => {
               alt="React"
             />
           </div>
-          <div className="col col-start-3 row-start-2">
+          <div className="col col-start-1 md:col-start-3 row-start-4 md:row-start-2">
             <Image
               src="/sanity_logo.svg"
               width={"100px"}
@@ -429,7 +429,7 @@ const ToolsBlock = () => {
               alt="Sanity"
             />
           </div>
-          <div className="col col-start-3 row-start-3">
+          <div className="col col-start-1 md:col-start-3 row-start-6 md:row-start-3">
             <Image
               src="/svelte_logo.svg"
               width={"100px"}
@@ -437,7 +437,7 @@ const ToolsBlock = () => {
               alt="Svelte"
             />
           </div>
-          <div className="col col-start-4 row-start-1">
+          <div className="col col-start-2 md:col-start-4 row-start-2 md:row-start-1">
             <Image
               src="/stripe_logo.svg"
               width={"80px"}
@@ -445,7 +445,7 @@ const ToolsBlock = () => {
               alt="Stripe"
             />
           </div>
-          <div className="col col-start-4 row-start-2">
+          <div className="col col-start-2 md:col-start-4 row-start-4 md:row-start-2">
             <Image
               src="/prisma_logo.svg"
               width={"110px"}
@@ -453,7 +453,7 @@ const ToolsBlock = () => {
               alt="Prisma"
             />
           </div>
-          <div className="col col-start-4 row-start-3">
+          <div className="col col-start-2 md:col-start-4 row-start-6 md:row-start-3">
             <Image
               src="/auth0_logo.svg"
               width={"110px"}
