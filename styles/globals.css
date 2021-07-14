@@ -89,6 +89,13 @@ textarea {
   z-index: -1;
 }
 
+.story-text {
+  -webkit-columns: 2;
+  columns: 2;
+  column-count: 2;
+  column-gap: 15px;
+}
+
 /* Global media query */
 @media (min-width: 300px) and (max-width: 768px) {
   textarea {
@@ -179,5 +186,12 @@ textarea {
 
   .mobile-navbar-menu-closed {
     display: none;
+  }
+
+  .story-text {
+    -webkit-columns: 1;
+    columns: 1;
+    column-count: 1;
+    column-gap: 0;
   }
 }

@@ -95,7 +95,7 @@ const Navbar = () => {
               className="self-center"
             >
               <Link href="#">
-                <a className="mx-4">Portafolio</a>
+                <a className="mx-4">¿Qué es JAMstack?</a>
               </Link>
             </motion.div>
             <motion.div
@@ -180,7 +180,7 @@ const Navbar = () => {
         <li className="p-4 px-6">
           <div className="border-b-2 border-gray-200 px-2 py-2">
             <Link href="#">
-              <a className="text-xl font-light">Portafolio</a>
+              <a className="text-xl font-light">¿Qué es JAMstack?</a>
             </Link>
           </div>
         </li>
