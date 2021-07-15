@@ -8,9 +8,9 @@ import ContactSection from "../layout/ContactSection";
 import Footer from "../layout/Footer";
 //Icons
 import { BiCodeAlt } from "react-icons/bi";
-import { GoServer } from "react-icons/go";
 import { MdWeb } from "react-icons/md";
-import { AiOutlineMobile } from "react-icons/ai";
+import { MdBusiness } from "react-icons/md";
+import { HiChartBar } from "react-icons/hi";
 
 const Services = () => (
   <>
@@ -161,7 +161,7 @@ const Main = () => {
           </motion.p>
           <div className="text-center py-3 md:py-2">
             <Link href="jamstack">
-              <a className="text-blue-400">
+              <a className="text-blue-400 font-semibold">
                 ¿Cómo JAMstack mejoraría mi negocio? &rarr;
               </a>
             </Link>
@@ -232,7 +232,7 @@ const ServicesBlock = () => {
       </div>
       <div className="col md:col-start-2 md:row-start-1  place-self-center bg-purple-100 text-purple-500 rounded-xl w-12 h-12 my-4">
         <div className="flex justify-center self-center p-2">
-          <GoServer size={32} />
+          <MdBusiness size={32} />
         </div>
       </div>
       <div className="col md:col-start-2 md:row-start-2">
@@ -264,7 +264,7 @@ const ServicesBlock = () => {
       </div>
       <div className="col md:col-start-2 md:row-start-4 place-self-center bg-blue-100 text-blue-500 rounded-xl w-12 h-12 my-4">
         <div className="flex justify-center self-center p-2">
-          <MdWeb size={32} />
+          <HiChartBar size={32} />
         </div>
       </div>
       <div className="col md:col-start-2 md:row-start-5">

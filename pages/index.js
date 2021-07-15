@@ -8,7 +8,7 @@ import { BsArrowDown } from "react-icons/bs";
 import { BiCodeAlt } from "react-icons/bi";
 import { GoServer } from "react-icons/go";
 import { MdWeb } from "react-icons/md";
-import { AiOutlineMobile } from "react-icons/ai";
+import { HiChartBar } from "react-icons/hi";
 //Layout components
 import Navbar from "../layout/Navbar";
 import ContactSection from "../layout/ContactSection";
@@ -292,7 +292,7 @@ const ServicesBlock = () => {
           >
             <div className="flex flex-col justify-center bg-blue-100 text-blue-500 rounded-full w-16 h-16 md:w-20 md:h-20">
               <div className="flex justify-center self-center">
-                <AiOutlineMobile size={32} />
+                <HiChartBar size={32} />
               </div>
             </div>
             <p className="text-sm  text-center pt-2">
