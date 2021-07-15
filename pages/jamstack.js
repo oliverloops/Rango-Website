@@ -79,7 +79,7 @@ const Main = () => {
             },
           }}
           transition={{ duration: 0.7, delay: 0.4 }}
-          className="text-center font-light md:text-sm text-gray-400 leading-relaxed max-w-prose md:p-4"
+          className="md:text-center font-light md:text-sm text-gray-400 leading-relaxed max-w-prose md:p-4"
         >
           JAMstack es una aproximación moderna en el mundo del desarrollo web,
           gracias a esta aproximación podemos crear mejores soluciones que sean
@@ -124,7 +124,7 @@ const Main = () => {
             },
           }}
           transition={{ duration: 0.7, delay: 0.4 }}
-          className="text-center font-light md:text-sm text-gray-400 leading-relaxed max-w-prose md:p-4"
+          className="md:text-center font-light md:text-sm text-gray-400 leading-relaxed max-w-prose md:p-4"
         >
           A tráves de la aproximación JAMstack podemos ayudarte a construir la
           solución digital que mejor se adapte a tus requerimientos. Es de esta
@@ -183,10 +183,10 @@ const Features = () => {
         <RiStackFill className="text-yellow-300" size={32} />
       </div>
       <div className="col col-start-1 row-start-2">
-        <p className="text-gray-600 font-medium">MODERNO</p>
+        <p className="text-gray-600 text-lg md:text-md font-medium">MODERNO</p>
       </div>
       <div className="col col-start-1 row-start-3 px-8 py-3">
-        <p className="text-center text-sm text-gray-400 font-light">
+        <p className="text-center md:text-sm text-gray-400 font-light">
           JAMstack esta basado en estandares y tecnologías de desarrollo
           modernas y es el futuro de las tecnologías web.
         </p>
@@ -195,10 +195,12 @@ const Features = () => {
         <IoIosSpeedometer className="text-yellow-300" size={32} />
       </div>
       <div className="col md:col-start-2 md:row-start-2">
-        <p className="text-gray-600 font-medium">MAS VELOZ</p>
+        <p className="text-gray-600 text-lg md:text-md font-medium">
+          MAS VELOZ
+        </p>
       </div>
       <div className="col md:col-start-2 md:row-start-3 px-8 py-3">
-        <p className="text-center text-sm text-gray-400 font-light">
+        <p className="text-center md:text-sm text-gray-400 font-light">
           Es nuestra prioridad que tu sitio sea lo suficientemente rápido para
           garantizar un buen rendimiento, por eso confiamos en JAMstack.
         </p>
@@ -207,10 +209,12 @@ const Features = () => {
         <FaMoneyBillWave className="text-yellow-300" size={32} />
       </div>
       <div className="col md:col-start-3 md:row-start-2">
-        <p className="text-gray-600 font-medium">MEJOR PRECIO</p>
+        <p className="text-gray-600 text-lg md:text-md font-medium">
+          MEJOR PRECIO
+        </p>
       </div>
       <div className="col md:col-start-3 md:row-start-3 px-8 py-3">
-        <p className="text-center text-sm text-gray-400 font-light">
+        <p className="text-center md:text-sm text-gray-400 font-light">
           Las soluciones bajo esta aproximación difieren de las tradicionales ya
           que el costo de infraestructura es mucho menor y bajo demanda.
         </p>

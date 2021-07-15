@@ -16,6 +16,15 @@ const Services = () => (
     <div className="pb-12">
       <Navbar />
     </div>
+    <Main />
+    <ServicesBlock />
+    <ContactSection />
+    <Footer />
+  </>
+);
+
+const Main = () => {
+  return (
     <main>
       <div className="p-12">
         <motion.h1
@@ -53,22 +62,107 @@ const Services = () => (
         transition={{ duration: 0.7, delay: 0.2 }}
         className="flex flex-col px-8 md:px-12 md:py-4 md:max-w-6xl"
       >
-        <div className="place-self-center">
-          <p className="text-xl md:text-3xl">
-            Te acompañamos durante el desarrollo de tu proyecto y adaptamos la
-            tecnología y nuestras metodologias a los requerimientos que necesite
-          </p>
-          <p className="md:text-xl font-black pt-2">
+        <div className="flex flex-col items-center px-8">
+          <motion.p
+            initial="pageInitial"
+            animate="pageAnimate"
+            variants={{
+              pageInitial: {
+                opacity: 0,
+                translateY: 100,
+              },
+              pageAnimate: {
+                opacity: 1,
+                translateY: 0,
+              },
+            }}
+            transition={{ duration: 0.7, delay: 0.25 }}
+            className="text-center font-semibold text-xl md:text-2xl text-gray-600 p-4"
+          >
             Imaginalo. Nosotros lo hacemos realidad.
-          </p>
+          </motion.p>
+          <motion.p
+            initial="pageInitial"
+            animate="pageAnimate"
+            variants={{
+              pageInitial: {
+                opacity: 0,
+                translateY: 100,
+              },
+              pageAnimate: {
+                opacity: 1,
+                translateY: 0,
+              },
+            }}
+            transition={{ duration: 0.7, delay: 0.4 }}
+            className="md:text-center font-light md:text-sm text-gray-400 leading-relaxed max-w-prose md:p-4"
+          >
+            Te acompañamos durante el desarrollo de tu proyecto y adaptamos la
+            tecnología y nuestras metodologias a los requerimientos que este
+            necesite.
+          </motion.p>
         </div>
       </motion.div>
-      <ServicesBlock />
-      <ContactSection />
+      <motion.div
+        initial="pageInitial"
+        animate="pageAnimate"
+        variants={{
+          pageInitial: {
+            opacity: 0,
+            translateY: 100,
+          },
+          pageAnimate: {
+            opacity: 1,
+            translateY: 0,
+          },
+        }}
+        transition={{ duration: 0.7, delay: 0.2 }}
+        className="flex flex-col px-8 md:px-12 md:py-4 md:max-w-6xl"
+      >
+        <div className="flex flex-col items-center px-8">
+          <motion.p
+            initial="pageInitial"
+            animate="pageAnimate"
+            variants={{
+              pageInitial: {
+                opacity: 0,
+                translateY: 100,
+              },
+              pageAnimate: {
+                opacity: 1,
+                translateY: 0,
+              },
+            }}
+            transition={{ duration: 0.7, delay: 0.25 }}
+            className="text-center font-semibold text-xl md:text-2xl text-gray-600 p-4"
+          >
+            Creamos tu visión e ideas con tecnologías seguras y escalables
+          </motion.p>
+          <motion.p
+            initial="pageInitial"
+            animate="pageAnimate"
+            variants={{
+              pageInitial: {
+                opacity: 0,
+                translateY: 100,
+              },
+              pageAnimate: {
+                opacity: 1,
+                translateY: 0,
+              },
+            }}
+            transition={{ duration: 0.7, delay: 0.4 }}
+            className="md:text-center font-light md:text-sm text-gray-400 leading-relaxed max-w-prose md:p-4"
+          >
+            Tu proyecto será contruido con una aproximación personalizada, a
+            base de tecnologías basadas en JavaScript y usando soluciones web
+            modernas como la arquitectura JAMstack.
+          </motion.p>
+        </div>
+      </motion.div>
     </main>
-    <Footer />
-  </>
-);
+  );
+};
 
 const ServicesBlock = () => {
   const controls = useAnimation();
@@ -79,158 +173,64 @@ const ServicesBlock = () => {
   }, [controls, inView]);
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 grid-auto-rows justify-items-start py-8 md:py-12 gap-2">
-      <div className="col-start-1 row-start-1 p-8 pl-8 md:pl-12">
-        <motion.h1
-          ref={ref}
-          initial="pageInitial"
-          animate={controls}
-          variants={{
-            pageInitial: {
-              opacity: 0,
-              translateY: 100,
-            },
-            pageAnimate: {
-              opacity: 1,
-              translateY: 0,
-            },
-          }}
-          transition={{ duration: 0.7, delay: 0.25 }}
-          className="font-sans font-black text-3xl md:text-5xl"
-        >
-          Creamos tu visión e ideas con tecnologías seguras y escalables
-        </motion.h1>
-        <motion.p
-          ref={ref}
-          initial="pageInitial"
-          animate={controls}
-          variants={{
-            pageInitial: {
-              opacity: 0,
-              translateY: 100,
-            },
-            pageAnimate: {
-              opacity: 1,
-              translateY: 0,
-            },
-          }}
-          transition={{ duration: 0.7, delay: 0.5 }}
-          className="pt-4 md:pt-6 text-md md:text-lg"
-        >
-          Tu proyecto será contruido con una aproximación personalizada, a base
-          de tecnologías basadas en JavaScript y usando soluciones web modernas
-          como la arquitectura JAMstack.
-        </motion.p>
+    <motion.div
+      ref={ref}
+      initial="pageInitial"
+      animate={controls}
+      variants={{
+        pageInitial: {
+          opacity: 0,
+          translateY: 100,
+        },
+        pageAnimate: {
+          opacity: 1,
+          translateY: 0,
+        },
+      }}
+      transition={{ duration: 0.7, delay: 0.15 }}
+      className="grid justify-items-center grid-cols-1 md:grid-cols-3 grid-rows-auto px-8"
+    >
+      <div className="col col-start-1 row-start-1 py-6">
+        <BiCodeAlt className="text-yellow-300" size={32} />
       </div>
-      <div className="col-start-1 md:col-start-2 row-start-2 md:row-start-1 place-self-center">
-        <div className="grid grid-auto-cols grid-auto-rows justify-items-center gap-4 md:gap-6">
-          <motion.div
-            ref={ref}
-            initial="pageInitial"
-            animate={controls}
-            variants={{
-              pageInitial: {
-                opacity: 0,
-                translateY: 100,
-              },
-              pageAnimate: {
-                opacity: 1,
-                translateY: 0,
-              },
-            }}
-            transition={{ duration: 0.7, delay: 0.6 }}
-            className="col-start-1 row-start-1 shadow-md hover:shadow-xl rounded-2xl p-7 md:p-6"
-          >
-            <div className="flex flex-col justify-center bg-green-100 text-green-500 rounded-full w-16 h-16 md:w-20 md:h-20">
-              <div className="flex justify-center self-center animate-pulse">
-                <BiCodeAlt size={32} />
-              </div>
-            </div>
-            <p className="text-sm text-center pt-2">
-              Desarrollo <br /> Frontend
-            </p>
-          </motion.div>
-          <motion.div
-            ref={ref}
-            initial="pageInitial"
-            animate={controls}
-            variants={{
-              pageInitial: {
-                opacity: 0,
-                translateY: 100,
-              },
-              pageAnimate: {
-                opacity: 1,
-                translateY: 0,
-              },
-            }}
-            transition={{ duration: 0.7, delay: 0.7 }}
-            className="col-start-2 row-start-1 shadow-md hover:shadow-xl  rounded-2xl p-7 md:p-6"
-          >
-            <div className="flex flex-col justify-center bg-purple-100 text-purple-500 rounded-full w-16 h-16 md:w-20 md:h-20">
-              <div className="flex justify-center self-center animate-pulse">
-                <GoServer size={32} />
-              </div>
-            </div>
-            <p className="text-sm text-center pt-2">
-              Desarrollo <br /> Backend
-            </p>
-          </motion.div>
-          <motion.div
-            ref={ref}
-            initial="pageInitial"
-            animate={controls}
-            variants={{
-              pageInitial: {
-                opacity: 0,
-                translateY: 100,
-              },
-              pageAnimate: {
-                opacity: 1,
-                translateY: 0,
-              },
-            }}
-            transition={{ duration: 0.7, delay: 0.8 }}
-            className="col-start-1 row-start-2 shadow-md hover:shadow-xl  rounded-2xl p-7 md:p-6"
-          >
-            <div className="flex flex-col justify-center bg-red-100 text-red-600 rounded-full w-16 h-16 md:w-20 md:h-20">
-              <div className="flex justify-center self-center animate-pulse">
-                <MdWeb size={32} />
-              </div>
-            </div>
-            <p className="text-sm text-center pt-2">
-              Diseño <br /> UI/UX
-            </p>
-          </motion.div>
-          <motion.div
-            ref={ref}
-            initial="pageInitial"
-            animate={controls}
-            variants={{
-              pageInitial: {
-                opacity: 0,
-                translateY: 100,
-              },
-              pageAnimate: {
-                opacity: 1,
-                translateY: 0,
-              },
-            }}
-            transition={{ duration: 0.7, delay: 0.9 }}
-            className="col-start-2 row-start-2 shadow-md hover:shadow-xl  rounded-2xl p-7 md:p-6"
-          >
-            <div className="flex flex-col justify-center bg-blue-100 text-blue-500 rounded-full w-16 h-16 md:w-20 md:h-20">
-              <div className="flex justify-center self-center animate-pulse">
-                <AiOutlineMobile size={32} />
-              </div>
-            </div>
-            <p className="text-sm  text-center pt-2">
-              Desarrollo <br /> Móvil
-            </p>
-          </motion.div>
-        </div>
+      <div className="col col-start-1 row-start-2">
+        <p className="text-gray-600 text-lg md:text-md font-medium">MODERNO</p>
       </div>
-    </div>
+      <div className="col col-start-1 row-start-3 px-8 py-3">
+        <p className="text-center md:text-sm text-gray-400 font-light">
+          JAMstack esta basado en estandares y tecnologías de desarrollo
+          modernas y es el futuro de las tecnologías web.
+        </p>
+      </div>
+      <div className="col md:col-start-2 md:row-start-1 py-6">
+        <GoServer className="text-yellow-300" size={32} />
+      </div>
+      <div className="col md:col-start-2 md:row-start-2">
+        <p className="text-gray-600 text-lg md:text-md font-medium">
+          MAS VELOZ
+        </p>
+      </div>
+      <div className="col md:col-start-2 md:row-start-3 px-8 py-3">
+        <p className="text-center md:text-sm text-gray-400 font-light">
+          Es nuestra prioridad que tu sitio sea lo suficientemente rápido para
+          garantizar un buen rendimiento, por eso confiamos en JAMstack.
+        </p>
+      </div>
+      <div className="col md:col-start-3 md:row-start-1 py-6">
+        <MdWeb className="text-yellow-300" size={32} />
+      </div>
+      <div className="col md:col-start-3 md:row-start-2">
+        <p className="text-gray-600 text-lg md:text-md font-medium">
+          MEJOR PRECIO
+        </p>
+      </div>
+      <div className="col md:col-start-3 md:row-start-3 px-8 py-3">
+        <p className="text-center md:text-sm text-gray-400 font-light">
+          Las soluciones bajo esta aproximación difieren de las tradicionales ya
+          que el costo de infraestructura es mucho menor y bajo demanda.
+        </p>
+      </div>
+    </motion.div>
   );
 };
 
