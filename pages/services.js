@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import Link from "next/link";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 //Layout components
@@ -60,7 +61,7 @@ const Main = () => {
           },
         }}
         transition={{ duration: 0.7, delay: 0.2 }}
-        className="flex flex-col px-8 md:px-12 md:py-4 md:max-w-6xl"
+        className="flex flex-col px-8 md:px-12 md:py-4"
       >
         <div className="flex flex-col items-center px-8">
           <motion.p
@@ -117,7 +118,7 @@ const Main = () => {
           },
         }}
         transition={{ duration: 0.7, delay: 0.2 }}
-        className="flex flex-col px-8 md:px-12 md:py-4 md:max-w-6xl"
+        className="flex flex-col px-8 md:px-12 md:py-4"
       >
         <div className="flex flex-col items-center px-8 pt-8">
           <motion.p
@@ -158,6 +159,13 @@ const Main = () => {
             base de tecnologías basadas en JavaScript y usando soluciones web
             modernas como la arquitectura JAMstack.
           </motion.p>
+          <div className="text-center py-3 md:py-2">
+            <Link href="jamstack">
+              <a className="text-blue-400">
+                ¿Cómo JAMstack mejoraría mi negocio? &rarr;
+              </a>
+            </Link>
+          </div>
           <motion.div
             initial="pageInitial"
             animate="pageAnimate"
@@ -204,7 +212,7 @@ const ServicesBlock = () => {
         },
       }}
       transition={{ duration: 0.7, delay: 0.15 }}
-      className="grid justify-items-center grid-cols-1 md:grid-cols-2 grid-rows-auto gap-2 p-8"
+      className="grid justify-items-center grid-cols-1 md:grid-cols-2 grid-rows-auto gap-2 p-8 md:p-14"
     >
       <div className="col col-start-1 row-start-1 place-self-center bg-green-100 text-green-500 rounded-xl w-12 h-12 my-4">
         <div className="flex justify-center self-center p-2">
@@ -213,13 +221,13 @@ const ServicesBlock = () => {
       </div>
       <div className="col col-start-1 row-start-2">
         <p className="text-gray-600 text-lg md:text-md font-medium">
-          Desarrollo Frontend
+          Desarrollo Web
         </p>
       </div>
       <div className="col col-start-1 row-start-3 px-8 py-3">
-        <p className="text-center md:text-sm text-gray-400 font-light">
-          JAMstack esta basado en estandares y tecnologías de desarrollo
-          modernas y es el futuro de las tecnologías web.
+        <p className="text-center md:text-sm text-gray-400 font-light md:w-80">
+          Construímos aplicaciones para resolver desde problemas simples hasta
+          complejos basados en las necesidades de su negocio.
         </p>
       </div>
       <div className="col md:col-start-2 md:row-start-1  place-self-center bg-purple-100 text-purple-500 rounded-xl w-12 h-12 my-4">
@@ -229,13 +237,13 @@ const ServicesBlock = () => {
       </div>
       <div className="col md:col-start-2 md:row-start-2">
         <p className="text-gray-600 text-lg md:text-md font-medium">
-          Desarrollo Backend
+          Soluciones Empresariales
         </p>
       </div>
       <div className="col md:col-start-2 md:row-start-3 px-8 py-3">
-        <p className="text-center md:text-sm text-gray-400 font-light">
-          Es nuestra prioridad que tu sitio sea lo suficientemente rápido para
-          garantizar un buen rendimiento, por eso confiamos en JAMstack.
+        <p className="text-center md:text-sm text-gray-400 font-light md:w-80">
+          Creamos software para distintos tipos de negocios, sin importar si su
+          negocio provee soluciones a otras empresas o a consumidores.
         </p>
       </div>
       <div className="col md:col-start-1 md:row-start-4 place-self-center bg-red-100 text-red-500 rounded-xl w-12 h-12 my-4">
@@ -249,9 +257,9 @@ const ServicesBlock = () => {
         </p>
       </div>
       <div className="col md:col-start-1 md:row-start-6 px-8 py-3">
-        <p className="text-center md:text-sm text-gray-400 font-light">
-          Las soluciones bajo esta aproximación difieren de las tradicionales ya
-          que el costo de infraestructura es mucho menor y bajo demanda.
+        <p className="text-center md:text-sm text-gray-400 font-light md:w-80">
+          Llevar ideas a la realidad es una cosa, pero hacerlas atractivas es
+          otra. por eso creamos productos que se ven y se usan de lo mejor.
         </p>
       </div>
       <div className="col md:col-start-2 md:row-start-4 place-self-center bg-blue-100 text-blue-500 rounded-xl w-12 h-12 my-4">
@@ -261,13 +269,13 @@ const ServicesBlock = () => {
       </div>
       <div className="col md:col-start-2 md:row-start-5">
         <p className="text-gray-600 text-lg md:text-md font-medium">
-          Otro Desarrollo
+          SEO y Analytics
         </p>
       </div>
       <div className="col md:col-start-2 md:row-start-6 px-8 py-3">
-        <p className="text-center md:text-sm text-gray-400 font-light">
-          Las soluciones bajo esta aproximación difieren de las tradicionales ya
-          que el costo de infraestructura es mucho menor y bajo demanda.
+        <p className="text-center md:text-sm text-gray-400 font-light md:w-80">
+          Hacemos que sus ideas no solo se vean y funcionen bien, también nos
+          preocupamos por posicionar su marca en internet.
         </p>
       </div>
     </motion.div>

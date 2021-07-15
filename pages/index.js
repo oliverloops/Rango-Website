@@ -76,16 +76,16 @@ const MainBlock = () => (
           transition={{ duration: 0.7, delay: 1.25 }}
           className="pt-4 md:pt-6 text-md md:text-lg"
         >
-          Rango es una agencia de software. En Rango nosotros construímos el
-          futuro, resolvemos problemas y creamos las mejores experiencias en web
-          y móvil.
+          Somos una agencia de software y laboratorio creativo. En Rango
+          contribuimos a construir el futuro, resolvemos problemas y creamos las
+          mejores experiencias para nuestros clientes en web y móvil.
         </motion.p>
       </div>
       <div className="col-start-1 md:col-start-2 row-start-1 place-self-center">
         <Image
           src="/rango_logo.png"
-          width="320"
-          height="320"
+          width="300"
+          height="300"
           alt="rango logo"
         />
       </div>
@@ -296,7 +296,7 @@ const ServicesBlock = () => {
               </div>
             </div>
             <p className="text-sm  text-center pt-2">
-              Desarrollo <br /> Móvil
+              SEO y <br /> Analytics
             </p>
           </motion.div>
         </div>

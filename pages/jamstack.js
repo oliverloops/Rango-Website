@@ -210,13 +210,14 @@ const Features = () => {
       </div>
       <div className="col md:col-start-3 md:row-start-2">
         <p className="text-gray-600 text-lg md:text-md font-medium">
-          MEJOR PRECIO
+          MENOR COSTO
         </p>
       </div>
       <div className="col md:col-start-3 md:row-start-3 px-8 py-3">
         <p className="text-center md:text-sm text-gray-400 font-light">
           Las soluciones bajo esta aproximación difieren de las tradicionales ya
-          que el costo de infraestructura es mucho menor y bajo demanda.
+          que el costo de infraestructura llega a ser mucho menor y bajo
+          demanda.
         </p>
       </div>
     </motion.div>

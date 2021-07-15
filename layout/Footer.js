@@ -225,7 +225,7 @@ const Footer = () => {
             <span role="img" aria-label="heart">
               ❤️
             </span>
-            &nbsp; at Rango Labs ©2021
+            &nbsp; at Rango Creative Lab ©2021
           </small>
         </motion.div>
       </footer>

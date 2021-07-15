@@ -92,9 +92,9 @@ const AboutBlock = () => {
             transition={{ duration: 0.7, delay: 0.4 }}
             className="text-center font-light md:text-sm text-gray-400 leading-relaxed max-w-prose md:p-4"
           >
-            Somos una agencia de desarrollo de software y soluciones web. nos
-            posicionamos como socios de nuestros clientes y les entregamos un
-            valor significante con resultados tangibles.
+            Somos una agencia de desarrollo de software y un laboratorio
+            creativo. nos posicionamos como socios de nuestros clientes y les
+            entregamos un valor significante con resultados tangibles.
           </motion.p>
         </div>
         <div className="flex flex-col items-center p-8">
@@ -159,13 +159,14 @@ const AboutBlock = () => {
             </p>
             <p className="pb-4">
               Nuestro equipo diseña, planifica y desarrolla soluciones que van
-              desde aplicaciones web, soluciones empresariales, herramientas
-              internas y desarrollo de productos digitales.
+              desde sitios a aplicaciones web, soluciones empresariales,
+              herramientas internas además de diseño y desarrollo de productos
+              digitales.
             </p>
             <p className="pb-4">
-              Así es como hoy por hoy ofrecemos servicios de desarrollo, diseño
-              UI/UX y servicios de consultoría. Nos encantan los desafíos y
-              resolver problemas para nuestros clientes sin importar la
+              Así es como hoy por hoy ofrecemos servicios de desarrollo web,
+              diseño UI/UX y servicios de consultoría. Nos encantan los desafíos
+              y resolver problemas para nuestros clientes sin importar la
               industría a la que se dediquen.
             </p>
           </motion.span>
