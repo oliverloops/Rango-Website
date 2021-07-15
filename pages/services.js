@@ -119,7 +119,7 @@ const Main = () => {
         transition={{ duration: 0.7, delay: 0.2 }}
         className="flex flex-col px-8 md:px-12 md:py-4 md:max-w-6xl"
       >
-        <div className="flex flex-col items-center px-8">
+        <div className="flex flex-col items-center px-8 pt-8">
           <motion.p
             initial="pageInitial"
             animate="pageAnimate"
@@ -158,6 +158,22 @@ const Main = () => {
             base de tecnologías basadas en JavaScript y usando soluciones web
             modernas como la arquitectura JAMstack.
           </motion.p>
+          <motion.div
+            initial="pageInitial"
+            animate="pageAnimate"
+            variants={{
+              pageInitial: {
+                opacity: 0,
+                translateY: 100,
+              },
+              pageAnimate: {
+                opacity: 1,
+                translateY: 0,
+              },
+            }}
+            transition={{ duration: 0.7, delay: 0.65 }}
+            className="h-px w-80 bg-gray-200 my-6 md:my-4"
+          ></motion.div>
         </div>
       </motion.div>
     </main>
@@ -188,13 +204,17 @@ const ServicesBlock = () => {
         },
       }}
       transition={{ duration: 0.7, delay: 0.15 }}
-      className="grid justify-items-center grid-cols-1 md:grid-cols-3 grid-rows-auto px-8"
+      className="grid justify-items-center grid-cols-1 md:grid-cols-2 grid-rows-auto gap-2 p-8"
     >
-      <div className="col col-start-1 row-start-1 py-6">
-        <BiCodeAlt className="text-yellow-300" size={32} />
+      <div className="col col-start-1 row-start-1 place-self-center bg-green-100 text-green-500 rounded-xl w-12 h-12 my-4">
+        <div className="flex justify-center self-center p-2">
+          <BiCodeAlt size={32} />
+        </div>
       </div>
       <div className="col col-start-1 row-start-2">
-        <p className="text-gray-600 text-lg md:text-md font-medium">MODERNO</p>
+        <p className="text-gray-600 text-lg md:text-md font-medium">
+          Desarrollo Frontend
+        </p>
       </div>
       <div className="col col-start-1 row-start-3 px-8 py-3">
         <p className="text-center md:text-sm text-gray-400 font-light">
@@ -202,12 +222,14 @@ const ServicesBlock = () => {
           modernas y es el futuro de las tecnologías web.
         </p>
       </div>
-      <div className="col md:col-start-2 md:row-start-1 py-6">
-        <GoServer className="text-yellow-300" size={32} />
+      <div className="col md:col-start-2 md:row-start-1  place-self-center bg-purple-100 text-purple-500 rounded-xl w-12 h-12 my-4">
+        <div className="flex justify-center self-center p-2">
+          <GoServer size={32} />
+        </div>
       </div>
       <div className="col md:col-start-2 md:row-start-2">
         <p className="text-gray-600 text-lg md:text-md font-medium">
-          MAS VELOZ
+          Desarrollo Backend
         </p>
       </div>
       <div className="col md:col-start-2 md:row-start-3 px-8 py-3">
@@ -216,15 +238,33 @@ const ServicesBlock = () => {
           garantizar un buen rendimiento, por eso confiamos en JAMstack.
         </p>
       </div>
-      <div className="col md:col-start-3 md:row-start-1 py-6">
-        <MdWeb className="text-yellow-300" size={32} />
+      <div className="col md:col-start-1 md:row-start-4 place-self-center bg-red-100 text-red-500 rounded-xl w-12 h-12 my-4">
+        <div className="flex justify-center self-center p-2">
+          <MdWeb size={32} />
+        </div>
       </div>
-      <div className="col md:col-start-3 md:row-start-2">
+      <div className="col md:col-start-1 md:row-start-5">
         <p className="text-gray-600 text-lg md:text-md font-medium">
-          MEJOR PRECIO
+          Diseño UI/UX
         </p>
       </div>
-      <div className="col md:col-start-3 md:row-start-3 px-8 py-3">
+      <div className="col md:col-start-1 md:row-start-6 px-8 py-3">
+        <p className="text-center md:text-sm text-gray-400 font-light">
+          Las soluciones bajo esta aproximación difieren de las tradicionales ya
+          que el costo de infraestructura es mucho menor y bajo demanda.
+        </p>
+      </div>
+      <div className="col md:col-start-2 md:row-start-4 place-self-center bg-blue-100 text-blue-500 rounded-xl w-12 h-12 my-4">
+        <div className="flex justify-center self-center p-2">
+          <MdWeb size={32} />
+        </div>
+      </div>
+      <div className="col md:col-start-2 md:row-start-5">
+        <p className="text-gray-600 text-lg md:text-md font-medium">
+          Otro Desarrollo
+        </p>
+      </div>
+      <div className="col md:col-start-2 md:row-start-6 px-8 py-3">
         <p className="text-center md:text-sm text-gray-400 font-light">
           Las soluciones bajo esta aproximación difieren de las tradicionales ya
           que el costo de infraestructura es mucho menor y bajo demanda.
