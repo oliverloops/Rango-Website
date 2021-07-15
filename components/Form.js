@@ -1,8 +1,15 @@
 import { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { useForm, ValidationError } from "@formspree/react";
 
 const Form = () => {
+  const [state, handleSubmit] = useForm("contactForm");
+
+  if (state.succeeded) {
+    return <p>¡Gracias por tu interés!, te contactaremos en breve</p>;
+  }
+
   const controls = useAnimation();
   const [ref, inView] = useInView();
 
@@ -27,8 +34,7 @@ const Form = () => {
       }}
       transition={{ duration: 0.7, delay: 0.5 }}
       className="flex flex-col justify-center rounded-3xl md:rounded-2xl shadow-lg p-2 md:p-4"
-      action="https://formspree.io/f/xnqlbzav"
-      method="post"
+      onSubmit={handleSubmit}
     >
       <label htmlFor="name" className="px-4 py-3 md:py-2 pt-6">
         <input
@@ -39,6 +45,7 @@ const Form = () => {
           placeholder="Ingresa tu nombre"
         />
       </label>
+      <ValidationError prefix="Name" field="name" errors={state.errors} />
       <label htmlFor="email" className="px-4 py-2">
         <input
           name="Email"
@@ -48,6 +55,7 @@ const Form = () => {
           placeholder="Ingresa tu correo electrónico"
         />
       </label>
+      <ValidationError prefix="Email" field="email" errors={state.errors} />
       <label htmlFor="phone" className="px-4 py-2">
         <input
           name="Phone"
@@ -67,7 +75,11 @@ const Form = () => {
         />
       </label>
       <div className="flex justify-center p-2">
-        <button type="submit" className="bg-yellow-300 rounded-full py-3 px-8">
+        <button
+          type="submit"
+          disabled={state.submitting}
+          className="bg-yellow-300 rounded-full py-3 px-8"
+        >
           Enviar
         </button>
       </div>
