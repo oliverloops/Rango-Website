@@ -6,9 +6,9 @@ import { useForm, ValidationError } from "@formspree/react";
 const Form = () => {
   const [state, handleSubmit] = useForm("contactForm");
 
-  if (state.succeeded) {
-    return <p>¡Gracias por tu interés!, te contactaremos en breve</p>;
-  }
+  // if (state.succeeded) {
+  //   return <p>¡Gracias por tu interés!, te contactaremos en breve</p>;
+  // }
 
   const controls = useAnimation();
   const [ref, inView] = useInView();
