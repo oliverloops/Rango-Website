@@ -7,6 +7,7 @@ import ContactSection from "../layout/ContactSection";
 import Footer from "../layout/Footer";
 //Icons
 import { IoIosSpeedometer } from "react-icons/io";
+import { FaMoneyBillWave } from "react-icons/fa";
 import { RiPlantFill, RiStackFill } from "react-icons/ri";
 
 const Jamstack = () => {
@@ -194,7 +195,7 @@ const Features = () => {
         <IoIosSpeedometer className="text-yellow-300" size={32} />
       </div>
       <div className="col md:col-start-2 md:row-start-2">
-        <p className="text-gray-600 font-medium">VELOCIDAD</p>
+        <p className="text-gray-600 font-medium">MAS VELOZ</p>
       </div>
       <div className="col md:col-start-2 md:row-start-3 px-8 py-3">
         <p className="text-center text-sm text-gray-400 font-light">
@@ -203,15 +204,15 @@ const Features = () => {
         </p>
       </div>
       <div className="col md:col-start-3 md:row-start-1 py-6">
-        <RiPlantFill className="text-yellow-300" size={32} />
+        <FaMoneyBillWave className="text-yellow-300" size={32} />
       </div>
       <div className="col md:col-start-3 md:row-start-2">
-        <p className="text-gray-600 font-medium">GRAN DISEÑO</p>
+        <p className="text-gray-600 font-medium">MEJOR PRECIO</p>
       </div>
       <div className="col md:col-start-3 md:row-start-3 px-8 py-3">
         <p className="text-center text-sm text-gray-400 font-light">
-          A su vez esta misma aproximación nos permite diseñar de una manera mas
-          eficiente la estructura de su solución y la interfaz de sus usarios.
+          Las soluciones bajo esta aproximación difieren de las tradicionales ya
+          que el costo de infraestructura es mucho menor y bajo demanda.
         </p>
       </div>
     </motion.div>
