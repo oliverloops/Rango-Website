@@ -82,10 +82,10 @@ const Footer = () => {
                 transition={{ duration: 0.7, delay: 0.2 }}
                 className="flex flex-col py-2"
               >
-                <Link href="#">
+                <Link href="/about">
                   <a className="underline hover:text-yellow-400">Acerca de</a>
                 </Link>
-                <Link href="#">
+                <Link href="/services">
                   <a className="underline hover:text-yellow-400 pt-2">
                     Servicios
                   </a>

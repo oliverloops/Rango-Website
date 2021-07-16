@@ -77,8 +77,8 @@ const MainBlock = () => (
           className="pt-4 md:pt-6 text-md md:text-lg"
         >
           Somos una agencia de software y laboratorio creativo. En Rango
-          contribuimos a construir el futuro, resolvemos problemas y creamos las
-          mejores experiencias para nuestros clientes en web y móvil.
+          contribuimos a construir el futuro, resolvemos problemas, diseñamos y
+          creamos las mejores experiencias en la web para nuestros clientes.
         </motion.p>
       </div>
       <div className="col-start-1 md:col-start-2 row-start-1 place-self-center">
@@ -89,7 +89,7 @@ const MainBlock = () => (
           alt="rango logo"
         />
       </div>
-      <div className="col-start-1 row-start-3 md:row-start-2 place-self-center md:place-self-start md:pl-12">
+      <div className="flex flex-col md:flex-row col-start-1 row-start-3 md:row-start-2 place-self-start pl-8 md:pl-12">
         <Link href="#contact-form">
           <a>
             <motion.button
@@ -112,8 +112,8 @@ const MainBlock = () => (
             </motion.button>
           </a>
         </Link>
-        <Link href="#">
-          <a className="underline px-5">
+        <Link href="/jamstack">
+          <a className="underline px-1 py-5 md:px-7 md:py-4">
             <motion.span
               initial="pageInitial"
               animate="pageAnimate"
@@ -129,7 +129,7 @@ const MainBlock = () => (
               }}
               transition={{ duration: 0.7, delay: 1.75 }}
             >
-              Nuestro portafolio
+              Potencia tu negocio con JAMstack
             </motion.span>
           </a>
         </Link>
@@ -346,7 +346,7 @@ const ProcessBlock = () => {
           usando nuestro stack de tecnologías
         </Process>
         <Process step={3}>
-          Realizamos diferentes pruebas al software, después de eso tu idea
+          Realizamos diferentes pruebas al software, después de eso tu proyecto
           estará disponible a todos tus clientes
         </Process>
       </div>
@@ -401,7 +401,7 @@ const ToolsBlock = () => {
           transition={{ duration: 0.7, delay: 0.2 }}
           className="text-gray-300 text-lg pt-2"
         >
-          Tecnologías que usamos
+          Algunas de las tecnologías que utilizamos
         </motion.p>
         <motion.p
           ref={ref}
@@ -420,7 +420,7 @@ const ToolsBlock = () => {
           transition={{ duration: 0.7, delay: 0.3 }}
           className="text-gray-600 text-3xl font-semibold"
         >
-          Solo lo mejor o nada.
+          Inspirados por JAMstack.
         </motion.p>
       </div>
       <motion.div
@@ -542,12 +542,12 @@ const ToolsBlock = () => {
             </a>
           </div>
           <div className="col col-start-2 md:col-start-4 row-start-4 md:row-start-2 self-center">
-            <a href="https://airtable.com/">
+            <a href="https://www.mongodb.com/cloud/atlas">
               <Image
-                src="/airtable_logo.svg"
+                src="/mongodb_logo.svg"
                 width={"130px"}
                 height={"80px"}
-                alt="Airtable"
+                alt="MongoDB"
               />
             </a>
           </div>
@@ -563,6 +563,13 @@ const ToolsBlock = () => {
           </div>
         </div>
       </motion.div>
+      <div className="text-center py-3 md:py-2">
+        <Link href="jamstack">
+          <a className="text-blue-400 font-semibold underline">
+            ¿Cómo JAMstack potencía mi negocio? &rarr;
+          </a>
+        </Link>
+      </div>
     </div>
   );
 };
