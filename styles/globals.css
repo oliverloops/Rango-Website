@@ -3,6 +3,18 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Keyframes */
+@keyframes dissapear {
+  from {
+    opacity: 1;
+    transform: translateY(-34rem);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-40rem);
+  }
+}
+
 html,
 body {
   padding: 0;
@@ -19,9 +31,8 @@ a {
   text-decoration: none;
 }
 
-.dissapear > div > p {
-  opacity: 0;
-  transform: translateY(-40rem);
+.dissapear > div {
+  animation: dissapear 900ms ease-in;
 }
 
 textarea {

@@ -25,12 +25,11 @@ const Form = ({ id }) => {
 
   return (
     <>
-      {/* {state.succeeded ? (
+      {state.succeeded ? (
         <Modal id={id}>
           <motion.div
             initial="pageInitial"
             animate="pageAnimate"
-            exit="pageExit"
             variants={{
               pageInitial: {
                 opacity: 0,
@@ -40,7 +39,6 @@ const Form = ({ id }) => {
                 opacity: 1,
                 translateY: "-34rem",
               },
-              pageExit: { opacity: 0, translateY: "-40rem" },
             }}
             transition={{ duration: 0.7 }}
             className="flex justify-center w-full"
@@ -58,37 +56,7 @@ const Form = ({ id }) => {
         </Modal>
       ) : (
         <></>
-      )} */}
-      <Modal id={id}>
-        <motion.div
-          initial="pageInitial"
-          animate="pageAnimate"
-          exit="pageExit"
-          variants={{
-            pageInitial: {
-              opacity: 0,
-              translateY: "-40rem",
-            },
-            pageAnimate: {
-              opacity: 1,
-              translateY: "-34rem",
-            },
-            pageExit: { opacity: 0, translateY: "-40rem" },
-          }}
-          transition={{ duration: 0.7 }}
-          className="flex justify-center w-full"
-        >
-          <p className="text-center text-gray-600 bg-green-300 font-semibold shadow-xl rounded-xl w-40 h-14 p-4">
-            ¡Enviado!{" "}
-            <span role="img" aria-label="thumb">
-              👍 &nbsp;
-            </span>
-            <span role="img" aria-label="party">
-              🎉
-            </span>
-          </p>
-        </motion.div>
-      </Modal>
+      )}
       <motion.div
         ref={ref}
         initial="pageInitial"
