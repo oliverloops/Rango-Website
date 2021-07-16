@@ -58,7 +58,7 @@ const Process = ({ step, children }) => {
           </div>
         </div>
       )}
-      <div className="col-start-2 row-start-1 text-gray-300 text-sm">
+      <div className="col-start-2 row-start-1 text-gray-400 text-sm">
         {step === 1
           ? "Planeación y Diseño"
           : step === 2
@@ -66,7 +66,7 @@ const Process = ({ step, children }) => {
           : "Pruebas y Despliegue"}
       </div>
       <div className="col-start-2 row-start-2 text-sm max-w-xs">{children}</div>
-      <div className="col-start-2 row-start-3 text-md font-bold">
+      <div className="col-start-2 row-start-3 text-gray-600  text-md font-bold">
         Paso {step}
       </div>
     </motion.div>

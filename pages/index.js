@@ -74,7 +74,7 @@ const MainBlock = () => (
             },
           }}
           transition={{ duration: 0.7, delay: 1.25 }}
-          className="pt-4 md:pt-6 text-md md:text-lg"
+          className="pt-4 md:pt-6 text-gray-600 text-md md:text-lg"
         >
           Somos una agencia de software y laboratorio creativo. En Rango
           contribuimos a construir el futuro, resolvemos problemas, diseñamos y
@@ -186,7 +186,7 @@ const ServicesBlock = () => {
             },
           }}
           transition={{ duration: 0.7, delay: 0.5 }}
-          className="pt-4 md:pt-6 text-md md:text-lg"
+          className="pt-4 md:pt-6 text-gray-600 text-md md:text-lg"
         >
           Ya sea que necesites un sitio web que se adapte a tus necesidades,
           mejorar alguna de tus plataformas o llevar tu visionaría idea a la
@@ -217,7 +217,7 @@ const ServicesBlock = () => {
                 <BiCodeAlt size={32} />
               </div>
             </div>
-            <p className="text-sm text-center pt-2">
+            <p className="text-sm text-gray-600 text-center pt-2">
               Desarrollo <br /> Frontend
             </p>
           </motion.div>
@@ -243,7 +243,7 @@ const ServicesBlock = () => {
                 <GoServer size={32} />
               </div>
             </div>
-            <p className="text-sm text-center pt-2">
+            <p className="text-sm text-gray-600 text-center pt-2">
               Desarrollo <br /> Backend
             </p>
           </motion.div>
@@ -269,7 +269,7 @@ const ServicesBlock = () => {
                 <MdWeb size={32} />
               </div>
             </div>
-            <p className="text-sm text-center pt-2">
+            <p className="text-sm text-gray-600 text-center pt-2">
               Diseño <br /> UI/UX
             </p>
           </motion.div>
@@ -295,7 +295,7 @@ const ServicesBlock = () => {
                 <HiChartBar size={32} />
               </div>
             </div>
-            <p className="text-sm  text-center pt-2">
+            <p className="text-sm text-gray-600 text-center pt-2">
               SEO y <br /> Analytics
             </p>
           </motion.div>
@@ -331,7 +331,7 @@ const ProcessBlock = () => {
             },
           }}
           transition={{ duration: 0.7, delay: 0.15 }}
-          className="font-sans font-black text-center text-2xl md:text-3xl"
+          className="font-sans font-black text-gray-600  text-center text-2xl md:text-3xl"
         >
           ¿Cuál es nuestro proceso?
         </motion.h1>

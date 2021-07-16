@@ -61,7 +61,7 @@ const ContactSection = () => {
             },
           }}
           transition={{ duration: 0.7, delay: 0.35 }}
-          className="font-sans text-md md:text-lg py-4"
+          className="font-sans text-gray-600 text-md md:text-lg py-4"
         >
           Envíanos un correo con tus datos y cuentanos un poco más sobre tu
           idea, nos encantaría trabajar contigo.
