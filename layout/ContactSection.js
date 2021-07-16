@@ -19,9 +19,12 @@ const ContactSection = () => {
   }, [controls, inObserver]);
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-auto gap-0 md:gap-2 px-6 py-14">
+    <div
+      id="grid-parent"
+      className="grid grid-cols-1 md:grid-cols-2 grid-rows-auto gap-0 md:gap-2 px-6 py-14"
+    >
       <div className="col-start-1 row-start-2 md:row-start-1 md:row-end-3 px-0 md:px-8 py-4 md:py-0">
-        <Form />
+        <Form id={"grid-parent"} />
       </div>
       <div className="col-start-1 md:col-start-2 row-start-1 p-2 md:p-0 w-full md:w-3/4">
         <motion.h1
