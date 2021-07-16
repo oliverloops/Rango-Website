@@ -18,6 +18,15 @@ function addRootElement(rootElem) {
 function usePortal(id) {
   const rootElemRef = useRef(null);
 
+  console.log(rootElemRef.current);
+
+  function removeElement(parentElem) {
+    rootElemRef.current.remove();
+    if (!parentElem.childElementCount) {
+      parentElem.remove();
+    }
+  }
+
   useEffect(
     function setupElement() {
       // Look for existing target dom element to append to
@@ -32,6 +41,10 @@ function usePortal(id) {
 
       // Add the detached element to the parent
       parentElem.appendChild(rootElemRef.current);
+
+      setTimeout(() => {
+        rootElemRef.current.className = "dissapear";
+      }, 3000);
 
       return function removeElement() {
         rootElemRef.current.remove();
