@@ -42,7 +42,7 @@ const Main = () => {
             },
           }}
           transition={{ duration: 0.7, delay: 0.1 }}
-          className="font-sans font-bold text-center text-xl md:text-2xl p-4"
+          className="font-sans font-black text-center text-2xl p-4"
         >
           <span className="marker-text-4">Nuestros Servicios</span>
         </motion.h1>
@@ -78,7 +78,7 @@ const Main = () => {
               },
             }}
             transition={{ duration: 0.7, delay: 0.25 }}
-            className="text-center font-semibold text-xl md:text-2xl text-gray-600 p-4"
+            className="text-center font-black text-xl md:text-2xl text-gray-600 p-4"
           >
             Imaginalo. Nosotros lo hacemos realidad.
           </motion.p>
@@ -96,7 +96,7 @@ const Main = () => {
               },
             }}
             transition={{ duration: 0.7, delay: 0.4 }}
-            className="md:text-center font-light md:text-sm text-gray-400 leading-relaxed max-w-prose md:p-4"
+            className="md:text-center text-gray-400 leading-relaxed max-w-prose md:p-4"
           >
             Te acompañamos durante el desarrollo de tu proyecto y adaptamos la
             tecnología y nuestras metodologias a los requerimientos que este
@@ -135,7 +135,7 @@ const Main = () => {
               },
             }}
             transition={{ duration: 0.7, delay: 0.25 }}
-            className="text-center font-semibold text-xl md:text-2xl text-gray-600 p-4"
+            className="text-center font-black text-xl md:text-2xl text-gray-600 p-4"
           >
             Creamos tu visión e ideas con tecnologías seguras y escalables
           </motion.p>
@@ -153,15 +153,15 @@ const Main = () => {
               },
             }}
             transition={{ duration: 0.7, delay: 0.4 }}
-            className="md:text-center font-light md:text-sm text-gray-400 leading-relaxed max-w-prose md:p-4"
+            className="md:text-center text-gray-400 leading-relaxed max-w-prose md:p-4"
           >
             Tu proyecto será contruido con una aproximación personalizada, a
             base de tecnologías basadas en JavaScript y usando soluciones web
             modernas como la arquitectura JAMstack.
           </motion.p>
-          <div className="text-center py-3 md:py-2">
+          <div className="text-center py-4 md:py-2">
             <Link href="jamstack">
-              <a className="text-blue-400 font-semibold">
+              <a className="text-blue-400 font-bold">
                 ¿Cómo JAMstack mejoraría mi negocio? &rarr;
               </a>
             </Link>
@@ -220,12 +220,12 @@ const ServicesBlock = () => {
         </div>
       </div>
       <div className="col col-start-1 row-start-2">
-        <p className="text-gray-600 text-lg md:text-md font-medium">
+        <p className="text-gray-600 text-lg md:text-md font-bold">
           Desarrollo Web
         </p>
       </div>
       <div className="col col-start-1 row-start-3 px-8 py-3">
-        <p className="text-center md:text-sm text-gray-400 font-light md:w-80">
+        <p className="text-center md:text-sm text-gray-400 md:w-80">
           Construímos aplicaciones para resolver desde problemas simples hasta
           complejos basados en las necesidades de su negocio.
         </p>
@@ -236,12 +236,12 @@ const ServicesBlock = () => {
         </div>
       </div>
       <div className="col md:col-start-2 md:row-start-2">
-        <p className="text-gray-600 text-lg md:text-md font-medium">
+        <p className="text-gray-600 text-lg md:text-md font-bold">
           Soluciones Empresariales
         </p>
       </div>
       <div className="col md:col-start-2 md:row-start-3 px-8 py-3">
-        <p className="text-center md:text-sm text-gray-400 font-light md:w-80">
+        <p className="text-center md:text-sm text-gray-400  md:w-80">
           Creamos software para distintos tipos de negocios, sin importar si su
           negocio provee soluciones a otras empresas o a consumidores.
         </p>
@@ -252,12 +252,12 @@ const ServicesBlock = () => {
         </div>
       </div>
       <div className="col md:col-start-1 md:row-start-5">
-        <p className="text-gray-600 text-lg md:text-md font-medium">
+        <p className="text-gray-600 text-lg md:text-md font-bold">
           Diseño UI/UX
         </p>
       </div>
       <div className="col md:col-start-1 md:row-start-6 px-8 py-3">
-        <p className="text-center md:text-sm text-gray-400 font-light md:w-80">
+        <p className="text-center md:text-sm text-gray-400  md:w-80">
           Llevar ideas a la realidad es una cosa, pero hacerlas atractivas es
           otra. por eso creamos productos que se ven y se usan de lo mejor.
         </p>
@@ -268,12 +268,12 @@ const ServicesBlock = () => {
         </div>
       </div>
       <div className="col md:col-start-2 md:row-start-5">
-        <p className="text-gray-600 text-lg md:text-md font-medium">
+        <p className="text-gray-600 text-lg md:text-md font-bold">
           SEO y Analytics
         </p>
       </div>
       <div className="col md:col-start-2 md:row-start-6 px-8 py-3">
-        <p className="text-center md:text-sm text-gray-400 font-light md:w-80">
+        <p className="text-center md:text-sm text-gray-400 md:w-80">
           Hacemos que sus ideas no solo se vean y funcionen bien, también nos
           preocupamos por posicionar su marca en internet.
         </p>

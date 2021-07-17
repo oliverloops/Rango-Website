@@ -83,7 +83,7 @@ const Form = ({ id }) => {
               name="Name"
               id="name"
               type="text"
-              className="bg-gray-200 rounded-lg px-4 py-2 w-full"
+              className="bg-gray-200 font-medium rounded-lg px-4 py-2 w-full"
               placeholder="Ingresa tu nombre"
               required
             />
@@ -94,7 +94,7 @@ const Form = ({ id }) => {
               name="Email"
               id="email"
               type="email"
-              className="bg-gray-200 rounded-lg px-4 py-2 w-full"
+              className="bg-gray-200 font-medium rounded-lg px-4 py-2 w-full"
               placeholder="Ingresa tu correo electrónico"
               required
             />
@@ -108,8 +108,8 @@ const Form = ({ id }) => {
             <input
               name="Phone"
               id="phone"
-              type="number"
-              className="bg-gray-200 rounded-lg px-4 py-2 w-full"
+              type="text"
+              className="bg-gray-200 font-medium rounded-lg px-4 py-2 w-full"
               placeholder="Ingresa tu número telefónico (opcional)"
             />
           </label>
@@ -118,7 +118,7 @@ const Form = ({ id }) => {
               name="Text"
               id="text"
               type="text"
-              className="bg-gray-200 rounded-lg px-4 py-2 w-full"
+              className="bg-gray-200 font-medium rounded-lg px-4 py-2 w-full"
               placeholder="Aquí puedes agregar más detalles, la idea que tengas en mente o preguntas que tengas al respecto."
               required
             />
@@ -127,7 +127,7 @@ const Form = ({ id }) => {
             <button
               type="submit"
               disabled={state.submitting}
-              className="bg-yellow-300 rounded-full py-3 px-8"
+              className="bg-yellow-300 font-semibold rounded-full py-3 px-8"
             >
               Enviar
             </button>

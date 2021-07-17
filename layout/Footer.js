@@ -220,7 +220,7 @@ const Footer = () => {
           transition={{ duration: 0.7, delay: 0.9 }}
           className="flex justify-center pt-6 pb-2"
         >
-          <small className="font-light">
+          <small>
             Crafted with{" "}
             <span role="img" aria-label="heart">
               ❤️

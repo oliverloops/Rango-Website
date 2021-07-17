@@ -134,7 +134,7 @@ const Navbar = () => {
                     },
                   }}
                   transition={{ duration: 0.6, delay: 0.8 }}
-                  className="bg-yellow-300 rounded-full py-4 px-7"
+                  className="bg-yellow-300 font-semibold rounded-full py-4 px-7"
                 >
                   Contáctanos
                 </motion.button>
@@ -173,28 +173,28 @@ const Navbar = () => {
         <li className="p-4 px-6">
           <div className="border-b-2 border-gray-200 px-2 py-3">
             <Link href="/services">
-              <a className="text-xl font-light">Servicios</a>
+              <a className="text-xl font-medium">Servicios</a>
             </Link>
           </div>
         </li>
         <li className="p-4 px-6">
           <div className="border-b-2 border-gray-200 px-2 py-2">
             <Link href="/jamstack">
-              <a className="text-xl font-light">¿Qué es JAMstack?</a>
+              <a className="text-xl font-medium">¿Qué es JAMstack?</a>
             </Link>
           </div>
         </li>
         <li className="p-4 px-6">
           <div className="border-b-2 border-gray-200 px-2 py-2">
             <Link href="/about">
-              <a className="text-xl font-light">Acerca de Nosotros</a>
+              <a className="text-xl font-medium">Acerca de Nosotros</a>
             </Link>
           </div>
         </li>
         <li className="p-4 px-6">
           <div className="border-b-2 border-gray-200 px-2 py-2">
             <Link href="/#contact-form">
-              <a className="text-xl font-light">Contáctanos</a>
+              <a className="text-xl font-medium">Contáctanos</a>
             </Link>
           </div>
         </li>

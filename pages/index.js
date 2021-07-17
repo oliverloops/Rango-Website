@@ -56,7 +56,7 @@ const MainBlock = () => (
             },
           }}
           transition={{ duration: 0.7, delay: 1.0 }}
-          className="font-sans font-black text-3xl md:text-5xl"
+          className="font-black text-3xl md:text-5xl"
         >
           Construímos tus ambiciosos productos digitales.
         </motion.h1>
@@ -106,14 +106,14 @@ const MainBlock = () => (
                 },
               }}
               transition={{ duration: 0.7, delay: 1.5 }}
-              className="bg-yellow-300 rounded-full py-4 px-7"
+              className="bg-yellow-300 font-bold md:font-semibold rounded-full py-4 px-7"
             >
               Contratános
             </motion.button>
           </a>
         </Link>
         <Link href="/jamstack">
-          <a className="underline px-1 py-5 md:px-7 md:py-4">
+          <a className="underline font-semibold md:font-normal px-1 py-5 md:px-7 md:py-4">
             <motion.span
               initial="pageInitial"
               animate="pageAnimate"
@@ -164,7 +164,7 @@ const ServicesBlock = () => {
             },
           }}
           transition={{ duration: 0.7, delay: 0.15 }}
-          className="font-sans font-black text-3xl md:text-5xl"
+          className="font-black text-3xl md:text-5xl"
         >
           <span className="marker-text-1">Hacemos</span> tus{" "}
           <span className="marker-text-2">ideas</span>{" "}
@@ -217,7 +217,7 @@ const ServicesBlock = () => {
                 <BiCodeAlt size={32} />
               </div>
             </div>
-            <p className="text-sm text-gray-600 text-center pt-2">
+            <p className="text-sm text-gray-600 font-semibold text-center pt-2">
               Desarrollo <br /> Frontend
             </p>
           </motion.div>
@@ -243,7 +243,7 @@ const ServicesBlock = () => {
                 <GoServer size={32} />
               </div>
             </div>
-            <p className="text-sm text-gray-600 text-center pt-2">
+            <p className="text-sm text-gray-600 font-semibold text-center pt-2">
               Desarrollo <br /> Backend
             </p>
           </motion.div>
@@ -269,7 +269,7 @@ const ServicesBlock = () => {
                 <MdWeb size={32} />
               </div>
             </div>
-            <p className="text-sm text-gray-600 text-center pt-2">
+            <p className="text-sm text-gray-600 font-semibold text-center pt-2">
               Diseño <br /> UI/UX
             </p>
           </motion.div>
@@ -295,7 +295,7 @@ const ServicesBlock = () => {
                 <HiChartBar size={32} />
               </div>
             </div>
-            <p className="text-sm text-gray-600 text-center pt-2">
+            <p className="text-sm text-gray-600 font-semibold text-center pt-2">
               SEO y <br /> Analytics
             </p>
           </motion.div>
@@ -331,7 +331,7 @@ const ProcessBlock = () => {
             },
           }}
           transition={{ duration: 0.7, delay: 0.15 }}
-          className="font-sans font-black text-gray-600  text-center text-2xl md:text-3xl"
+          className="text-gray-600 font-black text-center text-2xl md:text-3xl"
         >
           ¿Cuál es nuestro proceso?
         </motion.h1>
@@ -399,7 +399,7 @@ const ToolsBlock = () => {
             },
           }}
           transition={{ duration: 0.7, delay: 0.2 }}
-          className="text-gray-300 text-lg pt-2"
+          className="text-gray-300 md:text-lg pt-2"
         >
           Algunas de las tecnologías que utilizamos
         </motion.p>
@@ -418,7 +418,7 @@ const ToolsBlock = () => {
             },
           }}
           transition={{ duration: 0.7, delay: 0.3 }}
-          className="text-gray-600 text-3xl font-semibold"
+          className="text-gray-600 font-black text-2xl md:text-3xl"
         >
           Inspirados por JAMstack.
         </motion.p>
@@ -565,7 +565,7 @@ const ToolsBlock = () => {
       </motion.div>
       <div className="text-center py-3 md:py-2">
         <Link href="jamstack">
-          <a className="text-blue-400 font-semibold underline">
+          <a className="text-blue-400 font-bold md:font-semibold underline">
             ¿Cómo JAMstack potencía mi negocio? &rarr;
           </a>
         </Link>

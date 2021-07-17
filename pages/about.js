@@ -52,7 +52,7 @@ const AboutBlock = () => {
               },
             }}
             transition={{ duration: 0.7, delay: 0.1 }}
-            className="font-sans font-bold text-center text-xl md:text-2xl p-4"
+            className="font-sans font-black text-center text-2xl p-4"
           >
             <span className="marker-text-4">Acerca de Nosotros</span>
           </motion.h1>
@@ -72,7 +72,7 @@ const AboutBlock = () => {
               },
             }}
             transition={{ duration: 0.7, delay: 0.25 }}
-            className="text-center font-semibold text-xl md:text-2xl text-gray-600 p-4"
+            className="text-center font-black text-xl md:text-2xl text-gray-600 p-4"
           >
             Dale un vistazo de cerca a Rango.
           </motion.p>
@@ -90,7 +90,7 @@ const AboutBlock = () => {
               },
             }}
             transition={{ duration: 0.7, delay: 0.4 }}
-            className="text-center font-light md:text-sm text-gray-400 leading-relaxed max-w-prose md:p-4"
+            className="text-center text-gray-400 leading-relaxed max-w-prose md:p-4"
           >
             Somos una agencia de desarrollo de software y un laboratorio
             creativo. nos posicionamos como socios de nuestros clientes y les
@@ -115,7 +115,7 @@ const AboutBlock = () => {
             className="flex items-center"
           >
             <BiWorld className="text-gray-500" size={32} />
-            <p className="text-center text-xl font-semibold md:text-2xl text-gray-600 px-2 py-5">
+            <p className="text-center text-xl font-black md:text-2xl text-gray-600 px-2 py-5">
               Nuestra historia
             </p>
           </motion.div>
@@ -149,7 +149,7 @@ const AboutBlock = () => {
               },
             }}
             transition={{ duration: 0.7, delay: 0.7 }}
-            className="story-text  font-light md:text-sm text-gray-400 leading-loose max-w-prose p-4 md:p-6"
+            className="story-text text-gray-400 leading-loose max-w-prose p-4 md:p-6"
           >
             <p className="pb-4">
               Comenzamos a trabajar juntos a inicios del 2020, con el objetivo

@@ -42,7 +42,7 @@ const ContactSection = () => {
             },
           }}
           transition={{ duration: 0.7, delay: 0.15 }}
-          className="font-sans font-black text-2xl md:text-3xl"
+          className="font-black text-2xl md:text-4xl"
         >
           Contactános
         </motion.h1>
@@ -61,7 +61,7 @@ const ContactSection = () => {
             },
           }}
           transition={{ duration: 0.7, delay: 0.35 }}
-          className="font-sans text-gray-600 text-md md:text-lg py-4"
+          className="text-gray-600 text-md md:text-lg py-4"
         >
           Envíanos un correo con tus datos y cuentanos un poco más sobre tu
           idea, nos encantaría trabajar contigo.
