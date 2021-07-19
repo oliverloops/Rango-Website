@@ -15,6 +15,7 @@ import Navbar from "../layout/Navbar";
 import ContactSection from "../layout/ContactSection";
 import Footer from "../layout/Footer";
 //UI components
+import CubeScene from "../components/CubeScene";
 import Process from "../components/Process";
 
 const Home = () => {
@@ -86,12 +87,13 @@ const MainBlock = () => (
         </motion.p>
       </div>
       <div className="col-start-1 md:col-start-2 row-start-1 place-self-center">
-        <Image
+        {/* <Image
           src="/rango_logo.png"
           width="300"
           height="300"
           alt="rango logo"
-        />
+        /> */}
+        <CubeScene />
       </div>
       <div className="flex flex-col md:flex-row col-start-1 row-start-3 md:row-start-2 place-self-start pl-8 md:pl-12">
         <Link href="#contact-form">
