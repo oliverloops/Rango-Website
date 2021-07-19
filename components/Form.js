@@ -43,7 +43,7 @@ const Form = ({ id }) => {
             transition={{ duration: 0.7 }}
             className="flex justify-center w-full"
           >
-            <p className="text-center text-gray-600 bg-green-300 font-semibold shadow-xl rounded-xl w-40 h-14 p-4">
+            <p className="text-center text-gray-700 bg-green-300 font-bold shadow-xl rounded-xl w-40 h-14 p-4">
               ¡Enviado!{" "}
               <span role="img" aria-label="thumb">
                 👍 &nbsp;

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import * as THREE from "three";
 import { Canvas, useFrame, extend } from "@react-three/fiber";
 import { shaderMaterial, OrbitControls } from "@react-three/drei";
+//import glsl from "babel-plugin-glsl/macro";
 
 const glsl = () => {
   if (typeof window === undefined) {
@@ -66,7 +67,11 @@ const MyRotatingBox = () => {
 
 const Cube3D = () => {
   return (
-    <div id="canvas-container" style={{ height: "auto", width: "auto" }}>
+    <div
+      className="absolute"
+      id="canvas-container"
+      style={{ height: "auto", width: "auto" }}
+    >
       <Canvas orthographic camera={{ zoom: 40, position: [80, 20, 100] }}>
         <ambientLight intensity={0.8} />
         <spotLight position={[10, 15, 10]} angle={0.3} />

@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import { motion, useAnimation } from "framer-motion";
@@ -19,6 +20,9 @@ import Process from "../components/Process";
 const Home = () => {
   return (
     <>
+      <Head>
+        <title>Rango | Inicio</title>
+      </Head>
       <div className="pb-2 md:pb-10">
         <Navbar />
       </div>

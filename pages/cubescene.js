@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { motion } from "framer-motion";
 import Cube3D from "../components/Cube3D";
 
@@ -17,11 +18,23 @@ const cubescene = () => {
         },
       }}
       transition={{ duration: 0.7 }}
-      className="p-8"
+      className="flex justify-center w-auto h-auto p-8"
     >
-      <svg>
-        <polygon points="50 3,100 28,100 75, 50 100,3 75,3 25" fill="black" />
-      </svg>
+      {/* <svg
+        className="flex justify-center mx-12 my-4"
+        style={{ width: "auto", height: "200" }}
+      >
+        <polygon
+          points="200 6,300 30,300 128, 200 165,100 135,100 32"
+          fill="black"
+        />
+      </svg> */}
+      <Image
+        src="/hexagon_black.svg"
+        width="200"
+        height="200"
+        alt="rango hex"
+      />
       <Cube3D />
     </motion.div>
   );
