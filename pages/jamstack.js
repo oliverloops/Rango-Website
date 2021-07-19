@@ -31,7 +31,9 @@ const Jamstack = () => {
         <Navbar />
       </div>
       <Main />
-      <ContactSection />
+      <div id="contact-form">
+        <ContactSection />
+      </div>
       <Footer />
     </>
   );

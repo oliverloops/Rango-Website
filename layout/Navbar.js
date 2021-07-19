@@ -118,7 +118,7 @@ const Navbar = () => {
                 <a className="mx-4">Acerca de Nosotros</a>
               </Link>
             </motion.div>
-            <Link href="#">
+            <Link href="#contact-form">
               <a>
                 <motion.button
                   initial="pageInitial"

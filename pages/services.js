@@ -31,7 +31,9 @@ const Services = () => (
     </div>
     <Main />
     <ServicesBlock />
-    <ContactSection />
+    <div id="contact-form">
+      <ContactSection />
+    </div>
     <Footer />
   </>
 );

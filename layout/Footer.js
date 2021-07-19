@@ -140,69 +140,75 @@ const Footer = () => {
           </div>
 
           <div className="flex justify-center py-6 px-8">
-            <Link href="#">
-              <motion.a
-                ref={ref}
-                initial="pageInitial"
-                animate={controls}
-                variants={{
-                  pageInitial: {
-                    opacity: 0,
-                    translateY: 50,
-                  },
-                  pageAnimate: {
-                    opacity: 1,
-                    translateY: 0,
-                  },
-                }}
-                transition={{ duration: 0.7, delay: 0.5 }}
-                className="bg-yellow-300 text-white rounded-full w-10 h-10 p-2 mx-1"
-              >
-                <GrTwitter size={24} />
-              </motion.a>
-            </Link>
-            <Link href="#">
-              <motion.a
-                ref={ref}
-                initial="pageInitial"
-                animate={controls}
-                variants={{
-                  pageInitial: {
-                    opacity: 0,
-                    translateY: 50,
-                  },
-                  pageAnimate: {
-                    opacity: 1,
-                    translateY: 0,
-                  },
-                }}
-                transition={{ duration: 0.7, delay: 0.6 }}
-                className="bg-yellow-300 text-white rounded-full w-10 h-10 p-2 mx-1"
-              >
-                <FaLinkedinIn size={24} />
-              </motion.a>
-            </Link>
-            <Link href="#">
-              <motion.a
-                ref={ref}
-                initial="pageInitial"
-                animate={controls}
-                variants={{
-                  pageInitial: {
-                    opacity: 0,
-                    translateY: 50,
-                  },
-                  pageAnimate: {
-                    opacity: 1,
-                    translateY: 0,
-                  },
-                }}
-                transition={{ duration: 0.7, delay: 0.7 }}
-                className="bg-yellow-300 text-white rounded-full w-10 h-10 p-2 mx-1"
-              >
-                <GrGithub size={24} />
-              </motion.a>
-            </Link>
+            <motion.div
+              ref={ref}
+              initial="pageInitial"
+              animate={controls}
+              variants={{
+                pageInitial: {
+                  opacity: 0,
+                  translateY: 50,
+                },
+                pageAnimate: {
+                  opacity: 1,
+                  translateY: 0,
+                },
+              }}
+              transition={{ duration: 0.7, delay: 0.5 }}
+              className="flex"
+            >
+              <Link href="https://twitter.com/RangoHQ">
+                <a className="bg-yellow-300 text-white rounded-full w-10 h-10 p-2 mx-1">
+                  <GrTwitter size={24} />
+                </a>
+              </Link>
+            </motion.div>
+            <motion.div
+              ref={ref}
+              initial="pageInitial"
+              animate={controls}
+              variants={{
+                pageInitial: {
+                  opacity: 0,
+                  translateY: 50,
+                },
+                pageAnimate: {
+                  opacity: 1,
+                  translateY: 0,
+                },
+              }}
+              transition={{ duration: 0.7, delay: 0.6 }}
+              className="flex"
+            >
+              <Link href="https://www.linkedin.com/company/rangolabs">
+                <a className="bg-yellow-300 text-white rounded-full w-10 h-10 p-2 mx-1">
+                  <FaLinkedinIn size={24} />
+                </a>
+              </Link>
+            </motion.div>
+            <motion.div
+              ref={ref}
+              initial="pageInitial"
+              animate={controls}
+              variants={{
+                pageInitial: {
+                  opacity: 0,
+                  translateY: 50,
+                },
+                pageAnimate: {
+                  opacity: 1,
+                  translateY: 0,
+                },
+              }}
+              transition={{ duration: 0.7, delay: 0.7 }}
+              className="flex"
+            >
+              <Link href="https://github.com/RangoHQ">
+                <a className="bg-yellow-300 text-white rounded-full w-10 h-10 p-2 mx-1">
+                  <GrGithub size={24} />
+                </a>
+              </Link>
+            </motion.div>
           </div>
         </div>
         <motion.div

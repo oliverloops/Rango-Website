@@ -27,7 +27,9 @@ const About = () => {
         <Navbar />
       </div>
       <AboutBlock />
-      <ContactSection />
+      <div id="contact-form">
+        <ContactSection />
+      </div>
       <Footer />
     </>
   );
