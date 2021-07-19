@@ -2,7 +2,12 @@
   "forms": {
     "contactForm": {
       "name": "Rango Contact Form",
-      "actions": [{ "type": "email", "to": "oliveralr@protonmail.com" }]
+      "actions": [
+        {
+          "type": "email",
+          "to": "oliveralr@protonmail.com"
+        }
+      ]
     }
   }
 }

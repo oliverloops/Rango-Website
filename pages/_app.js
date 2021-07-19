@@ -3,7 +3,7 @@ import "../styles/globals.css";
 
 function App({ Component, pageProps }) {
   return (
-    <FormspreeProvider project="1723073748489207795">
+    <FormspreeProvider project="1725937456705961015">
       <Component {...pageProps} />
     </FormspreeProvider>
   );
