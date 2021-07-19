@@ -22,7 +22,7 @@ const CubeScene = () => {
             translateY: 0,
           },
         }}
-        transition={{ duration: 0.7, delay: 2.0 }}
+        transition={{ duration: 0.7, delay: 2.1 }}
       >
         <Image
           src="/hexagon_black.svg"
@@ -73,7 +73,7 @@ const Cube = () => {
           translateY: 0,
         },
       }}
-      transition={{ duration: 0.7, delay: 2.5 }}
+      transition={{ duration: 0.7, delay: 2.75 }}
       className="absolute py-4"
       id="canvas-container"
       style={{ height: "auto", width: "auto" }}

@@ -160,7 +160,7 @@ const Main = () => {
             modernas como la arquitectura JAMstack.
           </motion.p>
           <div className="text-center py-4 md:py-2">
-            <Link href="jamstack">
+            <Link href="/jamstack">
               <a className="text-blue-400 font-bold">
                 ¿Cómo JAMstack mejoraría mi negocio? &rarr;
               </a>

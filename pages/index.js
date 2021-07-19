@@ -87,12 +87,6 @@ const MainBlock = () => (
         </motion.p>
       </div>
       <div className="col-start-1 md:col-start-2 row-start-1 place-self-center">
-        {/* <Image
-          src="/rango_logo.png"
-          width="300"
-          height="300"
-          alt="rango logo"
-        /> */}
         <CubeScene />
       </div>
       <div className="flex flex-col md:flex-row col-start-1 row-start-3 md:row-start-2 place-self-start pl-8 md:pl-12">
@@ -342,7 +336,7 @@ const ProcessBlock = () => {
           ¿Cuál es nuestro proceso?
         </motion.h1>
       </div>
-      <div className="flex flex-col md:flex-row justify-around px-3 md:px-14 py-2 md:py-16">
+      <div className="flex flex-col md:flex-row justify-around px-3 md:px-14 py-2 md:py-12">
         <Process step={1}>
           Diseñamos la interfaz y la experiencia de uso para que puedas sugerir
           cambios, correciones y retroalimentación
@@ -356,6 +350,25 @@ const ProcessBlock = () => {
           estará disponible a todos tus clientes
         </Process>
       </div>
+      <motion.div
+        ref={ref}
+        initial="pageInitial"
+        animate={controls}
+        variants={{
+          pageInitial: {
+            opacity: 0,
+            translateY: 100,
+          },
+          pageAnimate: {
+            opacity: 1,
+            translateY: 0,
+          },
+        }}
+        transition={{ duration: 0.7, delay: 1.0 }}
+        className="hidden md:flex justify-center px-4"
+      >
+        <Image src="/squiggles.png" width="280" height="170" alt="squiggles" />
+      </motion.div>
     </>
   );
 };
@@ -570,7 +583,7 @@ const ToolsBlock = () => {
         </div>
       </motion.div>
       <div className="text-center py-3 md:py-2">
-        <Link href="jamstack">
+        <Link href="/jamstack">
           <a className="text-blue-400 font-bold md:font-semibold underline">
             ¿Cómo JAMstack potencía mi negocio? &rarr;
           </a>
