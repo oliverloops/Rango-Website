@@ -25,7 +25,6 @@ const Services = () => (
       />
       <meta property="og:url" content="https://rango.dev/services/" />
       <meta property="og:type" content="website" />
-      <link rel="icon" href="/rango_logo.png"></link>
     </Head>
     <div className="pb-12">
       <Navbar />

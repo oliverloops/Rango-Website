@@ -39,9 +39,9 @@ const Footer = () => {
               className="place-self-center"
             >
               <Image
-                src="/rango_logo.png"
-                width="92"
-                height="92"
+                src="/rango_logo.svg"
+                width="80"
+                height="80"
                 alt="rango logo"
               />
             </motion.div>

@@ -48,7 +48,7 @@ const Navbar = () => {
             <a>
               <Image
                 className="rango-home-logo"
-                src="/rango_text.png"
+                src="/rango_text.svg"
                 width="100"
                 height="45"
                 alt="rango text logo"

@@ -34,7 +34,6 @@ const Home = () => {
         />
         <meta property="og:url" content="https://rango.dev/" />
         <meta property="og:type" content="website" />
-        <link rel="icon" href="/rango_logo.png"></link>
       </Head>
       <div className="pb-2 md:pb-10">
         <Navbar />
