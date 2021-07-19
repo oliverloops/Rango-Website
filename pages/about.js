@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import Head from "next/head";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 //Icons
@@ -11,6 +12,18 @@ import Footer from "../layout/Footer";
 const About = () => {
   return (
     <>
+      <Head>
+        <title>Rango | Acerca de Nostros</title>
+        <meta name="description" content="Acerca de Nostros" />
+        <meta property="og:title" content="Acerca de Nostros" />
+        <meta
+          property="og:description"
+          content="Somos una agencia de desarrollo de software y un laboratorio creativo. nos posicionamos como socios de nuestros clientes y les entregamos un valor significante con resultados tangibles."
+        />
+        <meta property="og:url" content="https://rango.dev/" />
+        <meta property="og:type" content="website" />
+        <link rel="icon" href="/rango_logo.png"></link>
+      </Head>
       <div className="pb-12">
         <Navbar />
       </div>

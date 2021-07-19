@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import Link from "next/link";
+import Head from "next/head";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 //Layout components
@@ -14,6 +15,18 @@ import { HiChartBar } from "react-icons/hi";
 
 const Services = () => (
   <>
+    <Head>
+      <title>Rango | Servicios</title>
+      <meta name="description" content="Nuestros Servicios" />
+      <meta property="og:title" content="Nuestros Servicios" />
+      <meta
+        property="og:description"
+        content="Creamos tu visión e ideas con tecnologías seguras y escalables"
+      />
+      <meta property="og:url" content="https://rango.dev/services/" />
+      <meta property="og:type" content="website" />
+      <link rel="icon" href="/rango_logo.png"></link>
+    </Head>
     <div className="pb-12">
       <Navbar />
     </div>

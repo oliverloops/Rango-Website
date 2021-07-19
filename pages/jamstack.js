@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import Head from "next/head";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 //Layout components
@@ -8,11 +9,25 @@ import Footer from "../layout/Footer";
 //Icons
 import { IoIosSpeedometer } from "react-icons/io";
 import { FaMoneyBillWave } from "react-icons/fa";
-import { RiPlantFill, RiStackFill } from "react-icons/ri";
+import { RiStackFill } from "react-icons/ri";
 
 const Jamstack = () => {
   return (
     <>
+      <Head>
+        <title>Rango | JAMstack</title>
+        <meta name="description" content="¿Qué es JAMstack?" />
+        <meta property="og:title" content="¿Qué es JAMstack?" />
+        <meta
+          property="og:description"
+          content="JAMstack es una aproximación moderna en el mundo del desarrollo web, gracias a esta aproximación podemos crear mejores soluciones que sean mucho mas economicas, rapidas de construir y que son óptimas para el crecimiento de tu empresa o proyecto a corto y largo plazo.
+
+        "
+        />
+        <meta property="og:url" content="https://rango.dev/jamstack/" />
+        <meta property="og:type" content="website" />
+        <link rel="icon" href="/rango_logo.png"></link>
+      </Head>
       <div className="pb-12">
         <Navbar />
       </div>
