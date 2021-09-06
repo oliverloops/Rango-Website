@@ -119,7 +119,7 @@ const MainBlock = () => (
               transition={{ duration: 0.7, delay: 1.5 }}
               className="bg-yellow-300 font-bold md:font-semibold rounded-full py-4 px-7"
             >
-              Contratános
+              Contrátanos
             </motion.button>
           </a>
         </Link>
