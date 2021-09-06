@@ -1,4 +1,5 @@
-## Sitio Oficial de Rango 
-Landing page ubicado en: https://rango.dev 
+## Sitio Oficial de Rango
 
-_Rango Labs ©2021_
+Marketing site ubicado en: https://rango.dev
+
+_Rango Creative Lab ©2021_
