@@ -25,15 +25,18 @@ const Home = () => {
         <title>Rango | Inicio</title>
         <meta
           name="description"
-          content="Construímos tus ambiciosos productos digitales"
+          content="Construímos tus ambiciosos productos digitales."
         />
-        <meta property="og:title" content="Rango" />
         <meta
           property="og:description"
-          content="Construímos tus ambiciosos productos digitales"
+          content="Construímos tus ambiciosos productos digitales."
         />
-        <meta property="og:url" content="https://rango.dev/" />
         <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://rango.dev/" />
+        <meta
+          property="og:image"
+          content="https://pbs.twimg.com/profile_images/1434761478746382339/vk4t6P8I_400x400.jpg"
+        />
       </Head>
       <div className="pb-2 md:pb-10">
         <Navbar />
